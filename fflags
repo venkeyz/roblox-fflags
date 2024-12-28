@@ -1,0 +1,3 @@
+[true-false] FFlagDebugGraphicsPreferMetal
+[true-false] FFlagDebugGraphicsDisableDirect3D11
+[true-false] FFlagDebugGraphicsPreferVulkan
