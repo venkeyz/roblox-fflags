@@ -1,3 +1,16 @@
 [true-false] FFlagDebugGraphicsPreferMetal
 [true-false] FFlagDebugGraphicsDisableDirect3D11
 [true-false] FFlagDebugGraphicsPreferVulkan
+[true-false] FFlagDebugGraphicsDisableDirect3D11
+[true-false] FFlagDebugGraphicsPreferOpenGL
+[true-false] FFlagDebugGraphicsPreferD3D11FL10
+[true-false] FFlagDebugRenderingSetDeterministic
+[true-false] FFlagDebugLuaHeapDump
+[numbers] FIntRomarkStartWithGraphicQualityLevel
+[numbers] FIntTerrainArraySliceSize
+[numbers] FIntRenderShadowIntensity
+[numbers] DFIntTaskSchedulerTargetFps
+[true-false] DFFlagDebugEnableInterpolationVisualizer
+[true-false] DFFlagDebugDrawBroadPhaseAABBs
+[numbers] FIntCameraFarZPlane
+[true-false] DFFlagDisableDPIScale
