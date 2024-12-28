@@ -14,3 +14,7 @@
 [true-false] DFFlagDebugDrawBroadPhaseAABBs
 [numbers] FIntCameraFarZPlane
 [true-false] DFFlagDisableDPIScale
+[numbers] DFIntDebugFRMQualityLevelOverride
+[numbers] DFIntDebugRestrictGCDistance
+[true-false] FFlagGlobalWindRendering
+[true-false] FFlagGlobalWindActivated
