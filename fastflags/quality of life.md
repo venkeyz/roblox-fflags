@@ -12,7 +12,7 @@ order: 3
 ```
 ### Disable VC
 > [!NOTE]
-> Setting this to `True` will not do anything
+> setting this to `True` will not do anything
 ```json
 {
     "DFFlagVoiceChat4": "False"
@@ -54,5 +54,11 @@ order: 3
 ```json
 {
     "FFlagChatTranslationEnableSystemMessage": false
+}
+```
+### Disable ads
+```json
+{
+    "FFlagAdServiceEnabled": "False"
 }
 ```

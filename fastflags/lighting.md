@@ -1,7 +1,7 @@
 ---
 title: Lighting
 icon: light-bulb
-order: 1
+order: 2
 ---
 ### Voxel (Phase1)
 ```json

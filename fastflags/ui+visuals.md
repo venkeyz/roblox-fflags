@@ -29,9 +29,17 @@ order: 4
 ```
 ### Verified badge
 > [!NOTE]
-> Clientsided
+> clientsided
 ```json
 {
     "FStringWhitelistVerifiedUserId": "UserID"
+}
+```
+### Verified badge on everyone
+> [!NOTE]
+> also clientsided
+```json
+{
+    "FFlagOverridePlayerVerifiedBadge": "True"
 }
 ```

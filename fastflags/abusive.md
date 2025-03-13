@@ -1,7 +1,7 @@
 ---
 title: Abusive
 icon: alert-fill
-order: 6
+order: 5
 ---
 ### Drunk
 ```json
