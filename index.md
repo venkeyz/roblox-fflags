@@ -2,7 +2,7 @@
 title: -Index-
 icon: rel-file-path
 authors:
-    - name: Loaf (loaf0002)
+    - name: loaf0002
       link: https://bsky.app/profile/loaf0002.bsky.social
       avatar: assets/wheremypixelsat.jpeg
 date: 2025-03-12
@@ -24,4 +24,4 @@ date: 2025-03-12
 </div>
 
 > [!CAUTION]
-> **these are meant to only be used by roblox engineers, they may be useful but they can also break stuff
+> **these are meant to only be used by roblox engineers, they may be useful but they can also break stuff**
