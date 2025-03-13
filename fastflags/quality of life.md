@@ -30,3 +30,29 @@ order: 3
     "FFlagDebugDisableTelemetryV2Stat": "True"
 }
 ```
+### Disable fulscreen title bar
+```json
+{
+    "FIntFullscreenTitleBarTriggerDelayMillis": "3600000"
+}
+```
+### Automatically unmute mic (VC)
+```json
+{
+    "FFlagDebugDefaultChannelStartMuted": "False"
+}
+```
+### Party to Roblox Chat
+```json
+{
+    "FFlagAppChatRebrandStringUpdates": "False"
+}
+```
+### Remove translated supported message
+> [!NOTE]
+> `"Roblox automatically translates supported languages in chat."`
+```json
+{
+    "FFlagChatTranslationEnableSystemMessage": false
+}
+```

@@ -17,3 +17,21 @@ order: 4
     "FFlagLuaAppEnableFoundationColors7": "False"
 }
 ```
+### Remove VC beta badge
+```json
+{
+    "FFlagVoiceBetaBadge": "False",
+    "FFlagTopBarUseNewBadge": "False",
+    "FFlagBetaBadgeLearnMoreLinkFormview": "False",
+    "FFlagControlBetaBadgeWithGuac": "False",
+    "FStringVoiceBetaBadgeLearnMoreLink": "null"
+}
+```
+### Verified badge
+> [!NOTE]
+> Clientsided
+```json
+{
+    "FStringWhitelistVerifiedUserId": "UserID"
+}
+```
