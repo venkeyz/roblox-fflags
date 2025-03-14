@@ -1,7 +1,7 @@
 ---
 title: UI+Visuals
 icon: versions
-order: 4
+order: -5
 ---
 ### Custom disconnect message
 > [!NOTE]
