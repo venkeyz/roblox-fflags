@@ -4,6 +4,8 @@ icon: versions
 order: 4
 ---
 ### Custom disconnect message
+> [!NOTE]
+> if you want to change the text edit disconnection jumpscare
 ```json
 {
     "FFlagReconnectDisabled": "True",
@@ -41,5 +43,25 @@ order: 4
 ```json
 {
     "FFlagOverridePlayerVerifiedBadge": "True"
+}
+```
+### Disable sidebar
+```json
+{
+    "FFlagLuaAppChartsPageRenameIXP": "False"
+}
+```
+### Desktop DevTools
+> [!IMPORTANT]
+> only works on webview
+```json
+{
+    "FFlagDebugEnableNewWebView2DevTool": "True"
+}
+```
+### Revert Respawn text
+```json
+{
+    "FFlagInExperienceMenuResetButtonTextToRespawn": "False"
 }
 ```

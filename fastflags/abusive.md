@@ -1,7 +1,7 @@
 ---
 title: Abusive
 icon: alert-fill
-order: 5
+order: -7
 ---
 ### Drunk
 ```json
@@ -23,5 +23,30 @@ order: 5
 ```json
 {
     "DFIntAssemblyExtentsExpansionStudHundredth": "-50"
+}
+```
+### Noclip 2/Mesh noclip
+```json
+{
+    "DFIntPhysicsDecompForceUpgradeVersion": "1500"
+}
+```
+### Tool desync
+```json
+{
+    "DFIntSimBlockLargeLocalToolWeldManipulationsThreshold": "-1"
+}
+```
+### No Knockback/Ragdoll
+```json
+{
+    "DFIntGameNetLocalSpaceMaxSendIndex": "100000",
+    "DFIntPhysicsImprovedCyclicExecutiveThrottleThresholdTenth": "0"
+}
+```
+### Weird leg movement
+```json
+{
+    "DFFlagAnimatorPostProcessIK": "True"
 }
 ```

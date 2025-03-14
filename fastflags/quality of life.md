@@ -1,7 +1,7 @@
 ---
 title: Quality Of Life
 icon: sparkle-fill
-order: 3
+order: -4
 ---
 
 ### Disable Notifications
@@ -60,5 +60,12 @@ order: 3
 ```json
 {
     "FFlagAdServiceEnabled": "False"
+}
+```
+### Unlimited FPS unlocker
+```json
+{
+    "FFlagTaskSchedulerLimitTargetFpsTo2402": "False",
+    "DFIntTaskSchedulerTargetFps": "9999"
 }
 ```
