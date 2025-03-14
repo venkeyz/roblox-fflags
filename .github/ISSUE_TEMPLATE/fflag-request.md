@@ -1,8 +1,8 @@
 ---
 name: FFlag Request
 about: Suggest a FFlag for this project
-title: ''
-labels: ''
+title: "[REQUEST] "
+labels: fflag
 assignees: pixelyloaf
 
 ---
