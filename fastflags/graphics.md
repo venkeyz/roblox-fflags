@@ -31,3 +31,22 @@ order: -3
     "FIntTerrainArraySliceSize": "4"
 }
 ```
+### Force graphics quality level
+```json
+{
+    "FIntRomarkStartWithGraphicsQualityLevel": "1"
+}
+```
+### Low render distance
+```json
+{
+    "DFIntDebugRestrictGCDistance": "1"
+}
+```
+### Limit light updates
+```json
+{
+    "FIntRenderLocalLightUpdateMax": "8",
+    "FIntRenderLocalLightUpdatesMin": "6"
+}
+```

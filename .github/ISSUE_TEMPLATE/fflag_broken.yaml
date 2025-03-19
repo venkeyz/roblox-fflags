@@ -1,0 +1,53 @@
+name: Broken FFlag
+description: Report a FFlag not working
+title: "[REPORT] "
+labels:  ["bug"]
+projects: ["octo-org/1", "octo-org/44"]
+assignees:
+  - pixelyloaf
+body:
+  - type: markdown
+    attributes:
+      value: |
+        PLEASE PROVIDE PROOF VIAIMAGE OR VIDEO
+  - type: input
+    id: name
+    attributes:
+      label: FFlag Name
+      description: "What is/are the FFlag(s) that won't work?"
+      placeholder: DFIntS2PhysicsSenderRate
+    validations:
+      required: true
+  - type: dropdown
+    id: type
+    attributes:
+      label: What happened to the FFlag?
+      options:
+        - "Removed from client"
+        - "Exists but does nothing"
+    validations:
+        required: true
+  - type: dropdown
+    id: validated
+    attributes:
+      label: "If removed from client, did you use FStringDebugShowFlagState to check if it still exists? (Ignore if not)"
+      multiple: false
+      options:
+        - "Yes"
+    validations:
+        required: false
+  - type: textarea
+    id: proof
+    attributes:
+      label: Proof
+      description: Please provide an image/video for proof
+    validations:
+      required: true
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Before you submit
+      description: You must have provided image/video proof of the issue
+      options:
+        - label: "I have provided proof"
+          required: true
