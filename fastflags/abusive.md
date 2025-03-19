@@ -18,11 +18,11 @@ order: -7
 }
 ```
 ### Noclip 1
+> [!NOTE]
+> **this currently looks broken to me, might not work for you (good job roblox, honestly)**
+
 > [!TIP]
 > **adjust the value if you fall through stuff that you shouldn't be falling through**
-
-> [!NOTE]
-> this currently looks broken to me, might not work for you (good job roblox, honestly)
 ```json
 {
     "DFIntAssemblyExtentsExpansionStudHundredth": "-50"
