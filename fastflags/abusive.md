@@ -22,7 +22,7 @@ order: -7
 > **this currently looks broken to me, might not work for you (good job roblox, honestly)**
 
 > [!TIP]
-> **adjust the value if you fall through stuff that you shouldn't be falling through**
+> adjust the value if you fall through stuff that you shouldn't be falling through
 ```json
 {
     "DFIntAssemblyExtentsExpansionStudHundredth": "-50"
