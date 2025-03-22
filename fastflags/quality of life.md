@@ -4,7 +4,7 @@ icon: sparkle-fill
 order: -4
 ---
 
-### Disable Notifications
+### DO NOT DISTURB/Disable Notifications
 ```json
 {
     "FFlagToastNotificationsProtocolEnabled2": "False"
@@ -12,10 +12,114 @@ order: -4
 ```
 ### Disable VC
 > [!NOTE]
-> setting this to `True` will not do anything
+> Setting this to `True` will not do anything
 ```json
 {
     "DFFlagVoiceChat4": "False"
+}
+```
+### Remove translated supported message on join
+> [!NOTE]
+> `"Roblox automatically translates supported languages in chat."`
+```json
+{
+    "FFlagChatTranslationEnableSystemMessage": false
+}
+```
+
+### Allows you to customize which languages are available for the chat translation feature
+> [!IMPORTANT]
+> English cannot be removed.
+
+
+```json
+{
+    "FStringChatTranslationEnabledLocales": "es_es,fr_fr,pt_br,de_de,it_it,ja_jp,ko_kr,id_id,tr_tr,zh_cn,zh_tw,th_th,pl_pl,vi_vn,ru_ru,"
+}
+```
+### Remove long recommended section in homepage
+```json
+{
+    "FIntGameGridFlexFeedItemTileNumPerFeed": "0"
+}
+```
+### Disable Captures Keybind
+```json
+{
+    "FFlagEnableCapturesHotkeyExperiment_v4": "False"
+}
+```
+### Reduced Avatar Item Particle in FP
+```json
+{
+    "FFlagUserHideCharacterParticlesInFirstPerson": "True"
+}
+```
+### FPS Unlocker in Roblox Menu Settings
+```json
+{
+    "FFlagTaskSchedulerLimitTargetFpsTo2402": "False",
+    "DFIntTaskSchedulerTargetFps": "9999"
+}
+```
+### Unlimited FPS Unlocker
+```json
+{
+    "FFlagTaskSchedulerLimitTargetFpsTo2402": "False",
+    "DFIntTaskSchedulerTargetFps": "9999"
+}
+```
+### GUI Hiding Toggles
+```json
+{
+    "FFlagUserShowGuiHideToggles": "True",
+    "GuiHidingApiSupport2": "True"
+}
+```
+### Hide GUIs
+> [!IMPORTANT]
+> Replace "ID" with any group ID that you are in.
+
+| Key combination   | Action                                                                    |
+| ----------------- | ------------------------------------------------------------------------- |
+| Ctrl + Shift + B  | Toggles GUIs in 3D space (BillboardGuis, SurfaceGuis, etc)                |
+| Ctrl + Shift + C  | Toggles game-defined ScreenGuis                                           |
+| Ctrl + Shift + G  | Toggles Roblox CoreGuis                                                   |
+| Ctrl + Shift + N  | Toggles player names, and other BillboardGuis that show up above a player |
+```json
+{
+    "DFIntCanHideGuiGroupId": "ID"
+}
+```
+### Remove layered clothing related for searching in lua app catalog
+```json
+{
+    "FStringAXCategories": "ClassicShirts.ClassicTShirts.ClassicPants"
+}
+```
+### Disable Fullscreen Title Bar
+```json
+{
+    "FIntFullscreenTitleBarTriggerDelayMillis": "3600000"
+}
+```
+### Stuttery Animation Fix
+```json
+{
+    "DFIntTimestepAbiterThresholdCFLThou": "300"
+}
+```
+### Disable ads
+```json
+{
+    "FFlagAdServiceEnabled": "False"
+}
+```
+
+### Disable In-game Advertisements
+```json
+{
+    "FFlagAdServiceEnabled": "False"
 }
 ```
 ### Disable Telemetry
@@ -30,42 +134,144 @@ order: -4
     "FFlagDebugDisableTelemetryV2Stat": "True"
 }
 ```
-### Disable fulscreen title bar
+### Surf the web inside of Roblox
+> [!IMPORTANT]
+> **Click the Beta Badge of the 13+ badge to open the webview browser.**
 ```json
 {
-    "FIntFullscreenTitleBarTriggerDelayMillis": "3600000"
+    "FFlagTopBarUseNewBadge": "True",
+    "FStringTopBarBadgeLearnMoreLink": "https://udm14.com/",
+    "FStringVoiceBetaBadgeLearnMoreLink": "https://udm14.com/"
 }
 ```
-### Automatically unmute mic (VC)
+### MTU
+==- :icon-question: View Full Documentation
+> [!TIP]
+> **Identify the Current MTU**
+> - **Windows**: Open Command Prompt and type 'netsh interface ipv4 show subinterfaces`.
+> - **Linux**: Use 'ifconfig' or 'ip link show' to find the current MTU of your network interface.
+
+> [!TIP]
+> **Determine the Optimal MTU**
+> - **Ping Test**: Use the `ping` command with the `-f` flaf (to avoid fragmentation) and the `l` (or `s` on Linux) flag to set the global packet size.
+> - **Example for Windows**:
+> ```bash
+> ping roblox.com -f -l 1472
+> ```
+> - **Example for Linux**:
+> ```bash
+> ping -s 1472 -M do roblox.com
+> ```
+> - Start with a packet size of 1472 bytes, then reduce by 10-12 bytes if needed until you find the largest size that doesn't fragment. Add 28 bytes to this number to get the optimal MTU.
+===
+```json
+{
+    "DFIntConnectionMTUSize": "MTU_HERE"
+}
+```
+### No Internet Disconnect
+> [!NOTE]
+> **You will still be kicked but the message will not show.**
+```json
+{
+    "DFFlagDebugDisableTimeoutDisconnect: "True"
+}
+```
+### Adjust Default Timeout Time
+> [!TIP]
+> **1 second = 1000**
+
+
+```json
+{
+    "DFIntDefaultTimeoutTimeMs": "10000"
+}
+```
+### Quick Game Launch
+> [!CAUTION]
+> **This can cause some bugs**
+```json
+{
+    "FFlagEnableQuickGameLaunch": "True"
+}
+```
+### Increased Asset Preloading Count
+==- :icon-question: View Full Documentation
+> [!NOTE]
+> **Increasing the maximum limit of preloaded assets from 100 to infinite allows games you've already played to load much faster by instantly accessing previously loaded assets.**
+
+> [!IMPORTANT]
+> **For this to be effective, the game must have been fully loaded at least once, perferably with the entire map cached.**
+
+> [!TIP]
+> **If a game has a "Skip Loading" button, it's recommended to use it. These games typically include a countdown timer that, after reaching zero, merely confirms that all assets are loaded.**
+===
+
+```json
+{
+    "DFIntNumAssestsMaxToPreload": "9999999",
+    "DFIntAssetPreloading": "9999999"
+}
+```
+### Disable In-Gmae Purchases
+```json
+{
+    "DFlagOrder66": "True"
+}
+```
+### Disable Chat
+```json
+{
+    "FFlagDebugForceChatDisabled": "True"
+}
+```
+### Disable Dynamic Heads Animations
+```json
+{
+    "DFIntAnimationLodFacsDistanceMin": "0",
+    "DFIntAnimationLodFacsDistanceMax": "0",
+    "DFIntAnimationLodFacsVisibilityDenominator": "0"
+}
+```
+### Automatically unmuts your mic on join (VC)
 ```json
 {
     "FFlagDebugDefaultChannelStartMuted": "False"
 }
 ```
-### Party to Roblox Chat
+### opt-out Experience Language
+> [!NOTE]
+> **Removes the Experience Language option in settings**
+```json
+{
+    "FIntV1MenuLanguageSelectionFeaturePerMillageRollout": "0"
+}
+```
+### Lets you change the zoom out limit
+> [!IMPORTANT]
+> **Only applies to games that has not changed the default zoom limit**
+```json
+{
+    "FIntCameraMaxZoomDistance": "9999"
+}
+```
+### Exclusive Fullscreen
+> [!TIP]
+> Alt + Delete
+```json
+{
+    "FFlagHandleAltEnterFullscreenManually": "False"
+}
+```
+### Change Age Rating Learn More Link
+```json
+{
+    "FStringExperienceGuidelinesExplainedPageUrl": "https://udm14.com/"
+}
+```
+### Rename Party 2 Roblox Chat
 ```json
 {
     "FFlagAppChatRebrandStringUpdates": "False"
-}
-```
-### Remove translated supported message
-> [!NOTE]
-> `"Roblox automatically translates supported languages in chat."`
-```json
-{
-    "FFlagChatTranslationEnableSystemMessage": false
-}
-```
-### Disable ads
-```json
-{
-    "FFlagAdServiceEnabled": "False"
-}
-```
-### Unlimited FPS unlocker
-```json
-{
-    "FFlagTaskSchedulerLimitTargetFpsTo2402": "False",
-    "DFIntTaskSchedulerTargetFps": "9999"
 }
 ```
