@@ -34,7 +34,7 @@ order: 0
     "FFlagDebugGraphicsPreferD3D11FL10": "True"
 }
 ```
-### Direc tX 11
+### Direct X 11
 ```json
 {
     "FFlagDebugGraphicsPreferD3D11": "True"

@@ -109,13 +109,6 @@ order: -4
     "DFIntTimestepAbiterThresholdCFLThou": "300"
 }
 ```
-### Disable ads
-```json
-{
-    "FFlagAdServiceEnabled": "False"
-}
-```
-
 ### Disable In-game Advertisements
 ```json
 {

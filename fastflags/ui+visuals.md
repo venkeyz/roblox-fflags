@@ -176,13 +176,102 @@ order: -5
     "FFlagImproveMicroprofilerReadability": "False"
 }
 ```
-### Adk
-
-### Disable blue theme
+### Adjust Scroll Speed
+```json
+{
+    "FIntScrollWheelDeltaAmount": "140"
+}
+```
+### Set Custom Kick Message Length
+```json
+{
+    "FIntMaxKickMessageLength": "1"
+}
+```
+### Disable New Blue Theme
 ```json
 {
     "FFlagLuaAppUseUIBloxColorPalettes1": "False",
     "FFlagLuaAppEnableFoundationColors7": "False"
+}
+```
+### Enable New Settings Layout
+```json
+{
+    "FFlagInExperienceMenuReorderFirstVariant2": "True"
+}
+```
+### No Transparency V4 Menu **(2023)**
+```json
+{
+    "FStringInGameMenuModernizationStickyBarForcedUserIds": "UserID"
+}
+```
+### Subscriptions Page
+```json
+{
+    "FFlagLuaDevSubsEnabled": "True"
+}
+```
+### Overlay that shows what you type
+```json
+{
+    "FFlagDebugTextBoxServiceShowOverlay": "True"
+}
+```
+### Amount of lines to show at once for above
+```json
+{
+    "DFIntTextBoxServiceHistorySize": "1"
+}
+```
+### Hides gui
+```json
+{
+    "DFIntTextBoxServiceHistorySize": "1"
+}
+```
+### Dont Render UI
+```json
+{
+    "FFlagDebugDontRenderUI": "True"
+}
+```
+### Don't Render Screen GUIs
+```json
+{
+    "FFlagDebugDontRenderScreenGui": "True"
+}
+```
+### Disable Autocomplete
+```json
+{
+    "FFlagEnableCommandAutocomplete": "False"
+}
+```
+### Break Top Bar Menu
+```json
+{
+    "FStringNewInGameMenuForceds": "UserID",
+    "FFlagEnableInGameMenuChrome": "True"
+}
+```
+### Break Collectible Icon
+```json
+{
+    "FFlagDisplayCollectiblesIcon": "False"
+}
+```
+### Disable Bubble Chat
+```json
+{
+    "FFlagEnableBubbleChatFromChatService": "False"
+}
+```
+### Disable Avatar Chat
+```json
+{
+    "FFlagAvatarChatServiceEnabled3": "False"
 }
 ```
 ### Remove VC beta badge
@@ -195,15 +284,53 @@ order: -5
     "FStringVoiceBetaBadgeLearnMoreLink": "null"
 }
 ```
-### Desktop DevTools
+### VR Controller transparency
+```json
+{
+    "FIntVRTouchControllerTransparency": "0"
+}
+```
+### Disable VR Collision Fade
+```json
+{
+    "FFlagViewCollisionFadeToBlackInVR": "False"
+}
+```
+### Limit Videos Playing
+```json
+{
+    "DFIntVideoMaxNumberOfVideosPlayting": "0"
+}
+```
+### Disable DSA Reporting In-Game
+
+```json
+{
+    "FFlagDSAIllegalContentReporting2": "False"
+}
+```
+### Desktop App Dev Tools
 > [!IMPORTANT]
-> only works on webview
+> Only works on web view windows like profiles, Ctrl + Shift + I
 ```json
 {
     "FFlagDebugEnableNewWebView2DevTool": "True"
 }
 ```
-### Revert Respawn text
+### Enable Events Tab/Change Events Tab URL
+```json
+{
+    "FFlagPlatformEventEnabled2": "True",
+    "FStringPlatformEventUrl": "https://udm14.com/"
+}
+```
+### Better Trackpad Scrolling
+```json
+{
+    "FFlagBetterTrackpadScroling": "True"
+}
+```
+### Reset Character instead of Respawn in Experience Menu
 ```json
 {
     "FFlagInExperienceMenuResetButtonTextToRespawn": "False"
