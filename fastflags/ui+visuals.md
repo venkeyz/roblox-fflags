@@ -321,7 +321,7 @@ order: -5
 ```json
 {
     "FFlagPlatformEventEnabled2": "True",
-    "FStringPlatformEventUrl": "https://udm14.com/"
+    "FStringPlatformEventUrl": "https://udm14.com/" 
 }
 ```
 ### Better Trackpad Scrolling
