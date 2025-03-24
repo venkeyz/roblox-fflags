@@ -86,7 +86,7 @@ order: -5
 ### Disable Sidebar
 ```json
 {
-    "FFlagEnableNavBarLabels3": "False
+    "FFlagEnableNavBarLabels3": "False"
 }
 ```
 ### V2 Menu
