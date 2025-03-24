@@ -239,3 +239,15 @@ order: -7
     "DFIntGameNetPVHeaderTranslationZeroCutOffExponent": "10"
 }
 ```
+### Invisible 3
+> [!NOTE]
+> Restricts the client from sending any physics-related information. This means other people can topple you over.
+```json
+{
+    "FFlagDebugSimDefaultPrimalSolver": "True",
+    "DFFlagDebugSimPrimalFeedback": "True",
+    "DFIntDebugSimPrimalStiffnessMax": "0",
+    "DFIntDebugSimPrimalStiffnexxMin": "0",
+    "DFIntMaximumFreefallMoveTimeInTenths": "1000"
+}
+```

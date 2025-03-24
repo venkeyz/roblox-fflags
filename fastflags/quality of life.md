@@ -268,3 +268,11 @@ order: -4
     "FFlagAppChatRebrandStringUpdates": "False"
 }
 ```
+### 5 decimal digits limit for camera sensitivity
+> [!NOTE]
+> basically like idk 8 months ago roblox added a 3 decimal digits limit, some people that I know used those extra digits
+```json
+{
+    "FFlagFixSensitivityTextPrecision": "False"
+}
+```
