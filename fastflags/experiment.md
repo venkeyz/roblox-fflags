@@ -71,7 +71,7 @@ order: -9
     "DFStringDefaultAvatarDeathType": "Ragdoll"
 }
 ```
-### creash__()
+### crash__()
 
 > [!IMPORTANT]
 > **Studio Only**
