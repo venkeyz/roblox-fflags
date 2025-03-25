@@ -5,24 +5,28 @@ order: -3
 ---
 
 ### Set how many pixels to render
+added by @pixelyloaf
 ```json
 {
     "DFIntDebugDynamicRenderKiloPixels": "1"
 }
 ```
 ### Disable Highlights
+added by @pixelyloaf
 ```json
 {
     "DFFlagRenderHighlightMangerPrepare": "True"
 }
 ```
 ### Enable DRS
+added by @pixelyloaf
 ```json
 {
     "FFlagRenderDynamicResolutionScale12": "True"
 }
 ```
 ### Move Pre-Render Phase [~25 Performance Boost]
+added by @pixelyloaf
 ==- :icon-question: View Full Documentation
 > [!IMPORTANT]
 > This FastFlag moves the Pre-Render task to an off thread after all other tasks are completed. By default, Pre-Render runs first, forcing the render thread to wait until the Pre-Render process finishes before it can start rendering a frame.
@@ -42,31 +46,34 @@ order: -3
 }
 ```
 ### Increased Grass Motion & No Grass Motion
+added by @pixelyloaf
 ```json
 {
     "FIntGrassMovementReducedMotionFactor": "999"
 }
 ```
+added by @pixelyloaf
 ```json
 {
     "FIntGrassMovementReducedMotionFactor": "0"
 }
 ```
 ### Enable Highlight Outlines on any Rendering API
+added by @pixelyloaf
 ```json
 {
     "FFlagHighlightOutlinesOnMobile": "True"
 }
 ```
 ### No Bloom/Clouds
-
+added by @pixelyloaf
 ```json
 {
     "FFlagRenderNoLowFrmBloom": "False"
 }
 ```
 ### Render Occlusion Culling
-
+added by @pixelyloaf
 ```json
 {
     "DFFlagUseVisBugCheks": "True",
@@ -76,19 +83,21 @@ order: -3
 }
 ```
 ### Increased Particles on low graphics
-
+added by @pixelyloaf
 ```json
 {
     "FFlagDebugDeterministicParticles": "True"
 }
 ```
 ### Makes stuff slightly brighter
+added by @pixelyloaf
 ```json
 {
     "FFlagRenderFixFog": "True"
 }
 ```
 ### HyperThreading
+added by @pixelyloaf
 ```json
 {
     "FFlagDebugCheckRenderThreading": "True",
@@ -96,42 +105,49 @@ order: -3
 }
 ```
 ### Maximum Threads
+added by @pixelyloaf
 ```json
 {
     "FIntRuntimeMaxNumOfThreads": "2400"
 }
 ```
 ### Minimum Threads
+added by @pixelyloaf
 ```json
 {
     "FIntTaskSchedularThreadMin": "3"
 }
 ```
 ### Smoother Terrain
+added by @pixelyloaf
 ```json
 {
     "FFlagDebugRenderingSetDeterministic": "True"
 }
 ```
 ### Force Graphics Quality Level
+added by @pixelyloaf
 ```json
 {
     "FIntRomarkStartWithGraphicsQualityLevel": "1"
 }
 ```
 ### Disable Player Shadows
+added by @pixelyloaf
 ```json
 {
     "FIntRenderShadowIntensity": "0"
 }
 ```
 ### Preserve rendering quality with display setting
+added by @pixelyloaf
 ```json
 {
     "DFFlagDisableDPIScale": "True"
 }
 ```
 ### Low Graphics Quality w/ Max Render Distance/FRM Quality Levels
+added by @pixelyloaf
 > [!TIP]
 > **1-6 Are low graphics, Above 6 are high graphics. Like the 1-21 graphics slider**
 ```json
@@ -141,6 +157,7 @@ order: -3
 ```
 
 ### FRM 21 Graphics Quality Slider
+added by @pixelyloaf
 ```json
 {
     "FFlagCommitToGraphicsQualityFix": "True",
@@ -148,12 +165,14 @@ order: -3
 }
 ```
 ### Low render distance
+added by @pixelyloaf
 ```json
 {
     "DFIntDebugRestrictGCDistance": "1"
 }
 ```
 ### Limit light updates
+added by @pixelyloaf
 ```json
 {
     "FIntRenderLocalLightUpdateMax": "8",
@@ -161,12 +180,14 @@ order: -3
 }
 ```
 ### Disables fade in and out animation every light update
+added by @pixelyloaf
 ```json
 {
     "FIntRenderLocalLightFadeInMs": "0"
 }
 ```
 ### Make avatars shiny
+added by @pixelyloaf
 ==- :icon-question: View Documentation
 > [!TIP]
 > **Everything goes black on below <3**
@@ -184,18 +205,21 @@ order: -3
 }
 ```
 ### Disable PostFX
+added by @pixelyloaf
 ```json
 {
     "FFlagDisablePostFx": "True"
 }
 ```
 ### Pause Voxelizer/Disable Baked Shadows
+added by @pixelyloaf
 ```json
 {
     "DFFlagDebugPauseVoxelizer": "True"
 }
 ```
 ### Grey sky
+added by @pixelyloaf
 > [!IMPORTANT]
 > **Only applies to games with the default skybox**
 ```json
@@ -204,6 +228,7 @@ order: -3
 }
 ```
 ### Force LOD on Meshes
+added by @pixelyloaf
 ```json
 {
     "DFIntCSGLevelOfDetailSwitchingDistance": "0",
@@ -213,12 +238,14 @@ order: -3
 }
 ```
 ### Lighting Attenuation
+added by @pixelyloaf
 ```json
 {
     "FFlagNewLightAttenuation": "True"
 }
 ```
 ### Enable GPULightCulling
+added by @pixelyloaf
 > [!TIP]
 > **Combine with LightingAttenuation for better vision**
 ```json
@@ -227,12 +254,14 @@ order: -3
 }
 ```
 ### Enable CPULightCulling
+added by @pixelyloaf
 ```json
 {
     "FFlagDebugForceFSMCPULightCulling": "True"
 }
 ```
 ### Frame buffer
+added by @pixelyloaf
 > [!TIP]
 > **0 makes white screen 1-3 makes other players have laggy movement, 4 is stable has better performance than 10 and less input lag**
 ```json
@@ -241,6 +270,7 @@ order: -3
 }
 ```
 ### Low Quality Terrain Textures
+added by @pixelyloaf
 > [!TIP]
 > **4 for less quality 16, 32, 64 for higher quality**
 ```json
@@ -249,6 +279,7 @@ order: -3
 }
 ```
 ### Force Texture Quality
+added by @pixelyloaf
 > [!TIP]
 > **Set any value from 0-3**
 ```json
@@ -258,18 +289,21 @@ order: -3
 }
 ```
 ### Lower Quality Textures
+added by @pixelyloaf
 ```json
 {
     "DFIntPerformanceControlTextureQualityBestUtility": "-1"
 }
 ```
 ### No avatar textures
+added by @pixelyloaf
 ```json
 {
     "DFIntTextureCompositorActiveJobs": "0"
 }
 ```
 ### Texture Manager
+added by @pixelyloaf
 > [!TIP]
 > 1-4 Blurry, 5-7 low quality also removes studs, 8 Removes almost everything
 ```json
@@ -278,6 +312,7 @@ order: -3
 }
 ```
 ### Remove Grass
+added by @pixelyloaf
 ```json
 {
     "FIntFRMMinGrassDistance": "0",
@@ -286,6 +321,7 @@ order: -3
 }
 ```
 ### Force MSAA
+added by @pixelyloaf
 > [!IMPORTANT]
 > **Values: 0, 1, 2, 4, 8**
 
@@ -297,6 +333,7 @@ order: -3
 }
 ```
 ### ShadowMap Bias
+added by @pixelyloaf
 > [!IMPORTANT]
 > **Future & ShadowMap only**
 ```json
@@ -305,6 +342,7 @@ order: -3
 }
 ```
 ### Limits number of animations being played
+added by @pixelyloaf
 > [!TIP]
 > **0 removes most player animations, 1-5 removes the walk animation after jumping**
 ```json

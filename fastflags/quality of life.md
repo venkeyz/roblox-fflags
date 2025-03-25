@@ -5,12 +5,14 @@ order: -4
 ---
 
 ### DO NOT DISTURB/Disable Notifications
+added by @pixelyloaf
 ```json
 {
     "FFlagToastNotificationsProtocolEnabled2": "False"
 }
 ```
 ### Disable VC
+added by @pixelyloaf
 > [!NOTE]
 > Setting this to `True` will not do anything
 ```json
@@ -19,6 +21,7 @@ order: -4
 }
 ```
 ### Remove translated supported message on join
+added by @pixelyloaf
 > [!NOTE]
 > `"Roblox automatically translates supported languages in chat."`
 ```json
@@ -28,6 +31,7 @@ order: -4
 ```
 
 ### Allows you to customize which languages are available for the chat translation feature
+added by @pixelyloaf
 > [!IMPORTANT]
 > English cannot be removed.
 
@@ -38,24 +42,28 @@ order: -4
 }
 ```
 ### Remove long recommended section in homepage
+added by @pixelyloaf
 ```json
 {
     "FIntGameGridFlexFeedItemTileNumPerFeed": "0"
 }
 ```
 ### Disable Captures Keybind
+added by @pixelyloaf
 ```json
 {
     "FFlagEnableCapturesHotkeyExperiment_v4": "False"
 }
 ```
 ### Reduced Avatar Item Particle in FP
+added by @pixelyloaf
 ```json
 {
     "FFlagUserHideCharacterParticlesInFirstPerson": "True"
 }
 ```
 ### FPS Unlocker in Roblox Menu Settings
+added by @pixelyloaf
 ```json
 {
     "FFlagTaskSchedulerLimitTargetFpsTo2402": "False",
@@ -63,6 +71,7 @@ order: -4
 }
 ```
 ### Unlimited FPS Unlocker
+added by @pixelyloaf
 ```json
 {
     "FFlagTaskSchedulerLimitTargetFpsTo2402": "False",
@@ -70,6 +79,7 @@ order: -4
 }
 ```
 ### GUI Hiding Toggles
+added by @pixelyloaf
 ```json
 {
     "FFlagUserShowGuiHideToggles": "True",
@@ -77,6 +87,7 @@ order: -4
 }
 ```
 ### Hide GUIs
+added by @pixelyloaf
 > [!IMPORTANT]
 > Replace "ID" with any group ID that you are in.
 
@@ -92,30 +103,35 @@ order: -4
 }
 ```
 ### Remove layered clothing related for searching in lua app catalog
+added by @pixelyloaf
 ```json
 {
     "FStringAXCategories": "ClassicShirts.ClassicTShirts.ClassicPants"
 }
 ```
 ### Disable Fullscreen Title Bar
+added by @pixelyloaf
 ```json
 {
     "FIntFullscreenTitleBarTriggerDelayMillis": "3600000"
 }
 ```
 ### Stuttery Animation Fix
+added by @pixelyloaf
 ```json
 {
     "DFIntTimestepAbiterThresholdCFLThou": "300"
 }
 ```
 ### Disable In-game Advertisements
+added by @pixelyloaf
 ```json
 {
     "FFlagAdServiceEnabled": "False"
 }
 ```
 ### Disable Telemetry
+added by @pixelyloaf
 ```json
 {
     "FFlagDebugDisableTelemetryEphemeralCounter": "True",
@@ -128,6 +144,7 @@ order: -4
 }
 ```
 ### Surf the web inside of Roblox
+added by @pixelyloaf
 > [!IMPORTANT]
 > **Click the Beta Badge of the 13+ badge to open the webview browser.**
 ```json
@@ -138,6 +155,7 @@ order: -4
 }
 ```
 ### MTU
+added by @pixelyloaf
 ==- :icon-question: View Full Documentation
 > [!TIP]
 > **Identify the Current MTU**
@@ -163,6 +181,7 @@ order: -4
 }
 ```
 ### No Internet Disconnect
+added by @pixelyloaf
 > [!NOTE]
 > **You will still be kicked but the message will not show.**
 ```json
@@ -171,6 +190,7 @@ order: -4
 }
 ```
 ### Adjust Default Timeout Time
+added by @pixelyloaf
 > [!TIP]
 > **1 second = 1000**
 
@@ -181,6 +201,7 @@ order: -4
 }
 ```
 ### Quick Game Launch
+added by @pixelyloaf
 > [!CAUTION]
 > **This can cause some bugs**
 ```json
@@ -189,6 +210,7 @@ order: -4
 }
 ```
 ### Increased Asset Preloading Count
+added by @pixelyloaf
 ==- :icon-question: View Full Documentation
 > [!NOTE]
 > **Increasing the maximum limit of preloaded assets from 100 to infinite allows games you've already played to load much faster by instantly accessing previously loaded assets.**
@@ -207,18 +229,21 @@ order: -4
 }
 ```
 ### Disable In-Gmae Purchases
+added by @pixelyloaf
 ```json
 {
     "DFlagOrder66": "True"
 }
 ```
 ### Disable Chat
+added by @pixelyloaf
 ```json
 {
     "FFlagDebugForceChatDisabled": "True"
 }
 ```
 ### Disable Dynamic Heads Animations
+added by @pixelyloaf
 ```json
 {
     "DFIntAnimationLodFacsDistanceMin": "0",
@@ -227,12 +252,14 @@ order: -4
 }
 ```
 ### Automatically unmuts your mic on join (VC)
+added by @pixelyloaf
 ```json
 {
     "FFlagDebugDefaultChannelStartMuted": "False"
 }
 ```
 ### opt-out Experience Language
+added by @pixelyloaf
 > [!NOTE]
 > **Removes the Experience Language option in settings**
 ```json
@@ -241,6 +268,7 @@ order: -4
 }
 ```
 ### Lets you change the zoom out limit
+added by @pixelyloaf
 > [!IMPORTANT]
 > **Only applies to games that has not changed the default zoom limit**
 ```json
@@ -249,6 +277,7 @@ order: -4
 }
 ```
 ### Exclusive Fullscreen
+added by @pixelyloaf
 > [!TIP]
 > Alt + Delete
 ```json
@@ -257,20 +286,23 @@ order: -4
 }
 ```
 ### Change Age Rating Learn More Link
+added by @pixelyloaf
 ```json
 {
     "FStringExperienceGuidelinesExplainedPageUrl": "https://udm14.com/"
 }
 ```
 ### Rename Party 2 Roblox Chat
+added by @pixelyloaf
 ```json
 {
     "FFlagAppChatRebrandStringUpdates": "False"
 }
 ```
 ### 5 decimal digits limit for camera sensitivity
+added by @pixelyloaf
 > [!NOTE]
-> basically like idk 8 months ago roblox added a 3 decimal digits limit, some people that I know used those extra digits
+> only added because people i know use them
 ```json
 {
     "FFlagFixSensitivityTextPrecision": "False"

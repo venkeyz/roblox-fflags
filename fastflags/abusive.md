@@ -7,6 +7,7 @@ order: -7
 > FastFlags are not bannable by Roblox, but abusing them can get you banned from certain games.
 
 ### Teleport All Ragdolls/Unanchored to 0, 0, 0
+added by @pixelyloaf
 > [!NOTE]
 > Clientsided
 ```json
@@ -15,6 +16,7 @@ order: -7
 }
 ```
 ### No Knockback/Ragdoll
+added by @pixelyloaf
 ```json
 {
     "DFIntGameNetLocalSpaceMaxSendIndex": "100000",
@@ -22,12 +24,14 @@ order: -7
 }
 ```
 ### Tool desync
+added by @pixelyloaf
 ```json
 {
     "DFIntSimBlockLargeLocalToolWeldManipulationsThreshold": "-1"
 }
 ```
 ### Desync FFlag
+added by @venkeyz
 ```json
 {
     "DFFlagPhysicsSkipNonRealTimeHumanoidForceCalc2": "False",
@@ -38,18 +42,21 @@ order: -7
 }
 ```
 ### Remap R6 to R15 Rigs/Weird Movement
+added by @pixelyloaf
 ```json
 {
     "FFlagRemapAnimationR6ToR15Rig": "True"
 }
 ```
 ### Weird leg movement
+added by @pixelyloaf
 ```json
 {
     "DFFlagAnimatorPostProcessIK": "True"
 }
 ```
 ### Random High Jumps
+added by @pixelyloaf
 ```json
 {
     "FFlagSimAdaptiveTimesteppingDefault2": "True",
@@ -57,6 +64,7 @@ order: -7
 }
 ```
 ### Drunk
+added by @pixelyloaf
 ```json
 {
     "FFlagSimAdaptiveTimesteppingDefault2": "True",
@@ -65,6 +73,7 @@ order: -7
 }
 ```
 ### No animations
+added by @pixelyloaf
 > [!NOTE]
 > **Stops the game trying to replicate your animations in the server. You dont have animations in the server but you do for your client**
 ```json
@@ -73,12 +82,14 @@ order: -7
 }
 ```
 ### Delayed Animations
+added by @pixelyloaf
 ```json
 {
     "FFlagProcessAnimationLooped": "False"
 }
 ```
 ### Stick unanchored parts to you
+added by @pixelyloaf
 > [!TIP]
 > **- = up, + = down**
 ```json
@@ -88,6 +99,7 @@ order: -7
 }
 ```
 ### Max Raycast Distance
+added by @pixelyloaf
 > [!NOTE]
 > **Raycasting is the use of intersection tests to solve problems in Roblox. The most common use of raycasting is to determine the first object intersected by a ray. This is done by casting a virtual ray from a certain point in a direction and determing the first surface it intersected with.**
 
@@ -99,6 +111,7 @@ order: -7
 }
 ```
 ### Change DataSender Rate
+added by @pixelyloaf
 > [!NOTE]
 > **A.k.a does not let you load games**
 ```json
@@ -107,24 +120,29 @@ order: -7
 }
 ```
 ### Disable Touch Events
+added by @pixelyloaf
 ```json
 {
     "DFIntTouchSenderMaxBandwidthBps": "-1"
 }
 ```
 ### Improved Syncing
+added by @pixelyloaf
 ```json
 {
     "DFIntS2PhysicsSenderRate": "10000"
 }
 ```
 ### Clientsided Invisible
+added by @pixelyloaf
 ```json
 {
     "FIntParallelDynamicPartsFastClusterBatchSize": "-1"
 }
 ```
 ### Invisible 1
+added by @pixelyloaf
+moved by @venkeyz
 > [!NOTE]
 > Stops the physics on your character from sending to the server so your character doesnt move for the server. You can move on your client.
 ```json
@@ -133,6 +151,8 @@ order: -7
 }
 ```
 ### Invisible 2
+added by @pixelyloaf
+moved by @venkeyz
 > [!NOTE]
 > Locks your character's position on the server to (0, 0, 0), having the side effect of turning you invisible. This only affects the server and other clients, not you. server-sided things that rely on your position, like clicking to get tools, will not function. In some games these can be abusable.
 ```json
@@ -141,12 +161,14 @@ order: -7
 }
 ```
 ### Warp
+added by @pixelyloaf
 ```json
 {
     "DFIntMaxMissedWorldStepsRemembered": "1000"
 }
 ```
 ### Noclip 1
+added by @pixelyloaf
 > [!NOTE]
 > this currently looks broken to me, might not work for you (good job roblox, honestly)
 
@@ -158,18 +180,21 @@ order: -7
 }
 ```
 ### Noclip 2/Mesh Noclip
+added by @pixelyloaf
 ```json
 {
     "DFIntPhysicsDecompForceUpgradeVersion": "1500"
 }
 ```
 ### Wallglide
+added by @pixelyloaf
 ```json
 {
     "DFIntMaximumUnstickForceInGs": "-10"
 }
 ```
 ### Network Ownership
+added by @pixelyloaf
 > [!NOTE]
 > better [network ownership](https://create.roblox.com/docs/physics/network-ownership) of parts
 
@@ -185,12 +210,14 @@ order: -7
 }
 ```
 ### Drive Vehicles Slow
+added by @pixelyloaf
 ```json
 {
     "DFIntPhysicsImprovedCyclicExecutiveThrottleThresholdTenth": "0"
 }
 ```
 ### Fake lag
+added by @pixelyloaf
 ```json
 {
     "DFIntS2PhysicSenderRate": "1"
@@ -200,6 +227,7 @@ order: -7
 # Abusive Visuals
 
 ### Semi Fullbright
+added by @pixelyloaf
 ```json
 {
     "FFlagFastGPULightCulling3": "True",
@@ -212,6 +240,7 @@ order: -7
 }
 ```
 ### Draws a circle under avatars
+added by @pixelyloaf
 ```json
 {
     "FFlagDebugAvtarChatVisualization": "True",
@@ -221,6 +250,7 @@ order: -7
 }
 ```
 ### Humanoid Outline
+added by @pixelyloaf
 > [!NOTE]
 > **Draws an outline around every part and every humanoid**
 ```json
@@ -229,6 +259,7 @@ order: -7
 }
 ```
 ### fflag above but more complex
+added by @pixelyloaf
 > [!NOTE]
 > **Draws an outline around every body part**
 ```json
@@ -237,12 +268,14 @@ order: -7
 }
 ```
 ### Buggy ZPlane Camera
+added by @pixelyloaf
 ```json
 {
     "FIntCameraFarZPlane": "1"
 }
 ```
 ### Adds an UI in game, which highlights any part player touches (like ground, Meshes etc.). It's as non-functioning UI too. Also adds a blue circle to your humanoid.
+added by @pixelyloaf
 ```json
 {
     "FFlagDebugHumanoidRendering": "True"

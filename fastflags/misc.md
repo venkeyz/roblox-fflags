@@ -6,12 +6,14 @@ order: -8
 # :icon-trash:
 
 ### spammed
+added by @pixelyloaf
 ```json
 {
     "FIntDebugTextElongationFactor": "6785"
 }
 ```
 ### break everything
+added by @pixelyloaf
 ```json
 {
     "DFIntHttpRbxApiClientPerMinuteRequestLimit": "60",
@@ -28,12 +30,14 @@ order: -8
 }
 ```
 ### Stop the Chinese from spying on you
+added by @pixelyloaf
 ```json
 {
     "FStringTencentAuthPath": "null"
 }
 ```
 ### omg i cant believe roblox is that dumb to do this...
+added by @pixelyloaf
 ```json
 {
     "FIntPhysicsGridHierarchyLowestLevelInitBinCount": "199999999",
@@ -43,18 +47,21 @@ order: -8
 }
 ```
 ### Crash Roblox 1
+added by @pixelyloaf
 ```json
 {
     "DFIntTimestepArbiterThresholdCFLThou": "0"
 }
 ```
 ### Crash Roblox 2
+added by @pixelyloaf
 ```json
 {
     "DFFlagVideoCaptureServiceEnabled": "False"
 }
 ```
 ### Increase Ping
+added by @pixelyloaf
 ```json
 {
     "DFIntDataSenderMaxBandwithBps": "150"
@@ -64,6 +71,7 @@ order: -8
 # :icon-gear: Debug
 
 ### Replace all Decals with a Test Image
+added by @pixelyloaf
 
 ```json
 {
@@ -71,6 +79,7 @@ order: -8
 }
 ```
 ### Shows the state of a flag
+added by @pixelyloaf
 ```json
 {
     "FStringDebugShowFlagState": "FLAG_HERE"
@@ -83,31 +92,35 @@ order: -8
 }
 ```
 ### Show Outlined Chunks
+added by @pixelyloaf
 ```json
 {
     "FFlagDebugLightGridShowChunks": "True"
 }
 ```
 ### Show Outlined Chunks that are being interacted
+added by @pixelyloaf
 ```json
 {
     "DFFlagDebugEnableStreamingSolverVisualization": "True"
 }
 ```
 ### Prevents Remote Events from running
-
+added by @pixelyloaf
 ```json
 {
     "DFIntRemoteEventSingleInvocationSizeLimit": "1"
 }
 ```
 ### Show All Error Strings
+added by @pixelyloaf
 ```json
 {
     "FFlagDebugEnableErrorStringTesting": "True"
 }
 ```
 ### logs stuff in dev console
+added by @pixelyloaf
 ```json
 {
     "FStringDebugLuaLogLevel": "verbose",
@@ -115,36 +128,42 @@ order: -8
 }
 ```
 ### Octree Validation
+added by @pixelyloaf
 ```json
 {
     "FFlagDebugEnableOctreeValidation": "True"
 }
 ```
 ### Self Explanatory 1
+added by @pixelyloaf
 ```json
 {
     "DFFlagDebugPrintDataPingBreakDown": "True"
 }
 ```
 ### Self Explanatory 2
+added by @pixelyloaf
 ```json
 {
     "DFFlagDebugAudioLogging": "True"
 }
 ```
 ### Duplicate of Above
+added by @pixelyloaf
 ```json
 {
     "DFFlagDebugAudioLogging2": "True"
 }
 ```
 ### Self Explanatory 3
+added by @pixelyloaf
 ```json
 {
     "FFlagTrackerLodControllerDebugUI": "True"
 }
 ```
 ### Self Explanatory 4
+added by @pixelyloaf
 > [!NOTE]
 > **Disable Drag Detectors**
 ```json
@@ -153,6 +172,7 @@ order: -8
 }
 ```
 ### Self Explanatory 5
+added by @pixelyloaf
 > [!NOTE]
 > **Disable CTM Climbing**
 ```json
@@ -161,6 +181,7 @@ order: -8
 }
 ```
 ### Self Explanatory 6
+added by @pixelyloaf
 > [!NOTE]
 > **Disable Feedback Button in ESC**
 ```json
@@ -169,25 +190,28 @@ order: -8
 }
 ```
 ### Self Explanatory 7
-
+added by @pixelyloaf
 ```json
 {
     "FFlagRenamePassesAndGeatToSubscriptionsAndPasses": "False"
 }
 ```
 ### Self Explanitory 8
+added by @pixelyloaf
 ```json
 {
     "DFFlagDebugSimulateHangAtStartup": "True"
 }
 ```
 ### Self Explanatory 9
+added by @pixelyloaf
 ```json
 {
     "DFFlagDebugSimulateHangAtShutdown": "True"
 }
 ```
 ### Self Explanatory 10
+added by @pixelyloaf
 > [!NOTE]
 > **LDL Program Stats**
 ```json
@@ -197,24 +221,28 @@ order: -8
 }
 ```
 ### Self Explanatory 11
+added by @pixelyloaf
 ```json
 {
     "FFlagDebugCountSimBodyAllocations": "True"
 }
 ```
 ### Self Explanatory 12
+added by @pixelyloaf
 ```json
 {
     "FIntNewDevConsoleMaxLogCount": "2147483647"
 }
 ```
 ### Self Explanatory 13
+added by @pixelyloaf
 ```json
 {
     "FFlagDebugAlwaysDisplayRenderStats": "True"
 }
 ```
 ### Self Explanatory 14
+added by @pixelyloaf
 ###### set to 0 for the super fps boost trust it works
 ```json
 {
@@ -222,6 +250,7 @@ order: -8
 }
 ```
 ### Self Explanatory 15
+added by @pixelyloaf
 > [!NOTE]
 > Allows you to edit the DataModel Patch
 ```json

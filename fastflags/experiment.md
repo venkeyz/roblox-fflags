@@ -12,37 +12,43 @@ order: -9
     "FFlagEnablePartyVoiceOnlyForEligibleUsers": "False"
 }
 ```
-### Experience Menu Refactror
+### Experience Menu Refactor
+added by @pixelyloaf
 ```json
 {
     "FFlagDebugRefactorInExpGameSettings": "True"
 }
 ```
 ### Enable Multi Try On
+added by @pixelyloaf
 ```json
 {
     "FFlagAXEnableMultiTryOnUI": "True"
 }
 ```
 ### Enable Posts
+added by @pixelyloaf
 ```json
 {
     "FFlagCapturesPostEnabledForAll_v4": "True"
 }
 ```
 ### New Experience Menu
+added by @pixelyloaf
 ```json
 {
     "FFlagRefactorInExpGameSettings": "True"
 }
 ```
 ### Enable First Time User Experience for Chrome UI
+added by @pixelyloaf
 ```json
 {
     "FFlagEnableChromeFTUX": "True"
 }
 ```
 ### Chrome UI Topbar Removal
+added by @pixelyloaf
 ```json
 {
     "FFlagEnableInGameMenuChromeABTest4": "False",
@@ -50,18 +56,21 @@ order: -9
 }
 ```
 ### Hide playerlist close button on Chrome UI
+added by @pixelyloaf
 ```json
 {
     "FFlagDisablePlayerListDisplayCloseBtn": "True"
 }
 ```
 ### Self Explanatory i think
+added by @pixelyloaf
 ```json
 {
     "FFlagChromeUsePreferredTransparency": "True"
 }
 ```
 ### Ragdoll Death Type
+added by @pixelyloaf
 
 > [!IMPORTANT]
 > **Studio Only**
@@ -72,6 +81,7 @@ order: -9
 }
 ```
 ### crash__()
+added by @pixelyloaf
 
 > [!IMPORTANT]
 > **Studio Only**
