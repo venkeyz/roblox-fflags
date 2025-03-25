@@ -9,7 +9,7 @@ icon: devices
 3. **Paste** in the **JSON**.
 4. **Save** and you're good to go!
 
-## :icon-questionm: Normal Roblox Bootstrapper How to Use:
+## :icon-question: Normal Roblox Bootstrapper How to Use:
 ###### You can also do Roblox Studio
 1. **Navigate** to your **Roblox Installation directory**. Typically found at `%localappdata%\Roblox\Versions\` or `C:\Program Files (x86)\Roblox\Versions`.
 2. **Identify** the folder `version-xxxxxxxxxxxxxxxx` ~~containing `RobloxPlayerBeta.exe`~~ **You can do this for Roblox Studio too.**
@@ -18,7 +18,7 @@ icon: devices
 5. **Save** and you're good to go!
 ###### Do note that after roblox updates you have to do this process again
 
-## Sober (Linux)
+## :icon-question: Sober (Linux)
 1. **Navigate** to your **Sober Config File**. Most likely found at `~/var/org.vinegarhq.Sober/config/sober`.
 2. **Open** `config.json` with your preferred text/code editor and paste the **JSON** into **fflags**.
 3. **Save** and you're good to go!
