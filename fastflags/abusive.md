@@ -27,6 +27,16 @@ order: -7
     "DFIntSimBlockLargeLocalToolWeldManipulationsThreshold": "-1"
 }
 ```
+### Desync FFlag
+```json
+{
+    "DFFlagPhysicsSkipNonRealTimeHumanoidForceCalc2": "False",
+    "DFIntS2PhysicsSenderRate": "3",
+    "DFIntTaskSchedularTargetFps": "5588562",
+    "FFlagGameBasicSettingsFramerateCap5": "False",
+    "FFlagTaskSchedularLimitTargetFpsTo2402": "False"
+}
+```
 ### Remap R6 to R15 Rigs/Weird Movement
 ```json
 {
