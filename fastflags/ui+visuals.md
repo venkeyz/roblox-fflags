@@ -386,3 +386,10 @@ added by @pixelyloaf
     "FFlagInExperienceMenuResetButtonTextToRespawn": "False"
 }
 ```
+### Blue Theme
+added by @pixelyloaf
+```json
+{
+    "FFlagLuaAppEnableFoundationColors5": "True"
+}
+```

@@ -20,7 +20,7 @@ icon: devices
 
 ## :icon-question: Sober (Linux)
 1. **Navigate** to your **Sober Config File**. Most likely found at `~/var/org.vinegarhq.Sober/config/sober`.
-2. **Open** `config.json` with your preferred text/code editor and paste the **JSON** into **fflags**.
+2. **Open** `config.json` with your preferred text/code editor and paste the **JSON** into the **fflags** section.
 3. **Save** and you're good to go!
 
 ## ~~:icon-question: Android Roblox How to Use:~~

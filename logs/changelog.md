@@ -11,7 +11,11 @@ date: 26/03/2025
 
 <div align="center">
 
-## vsomething.something.something idk i'll make it as soon i add more
-released on 26/03/2025
+## v2.0.0
+released on 26/03/2025 23:42 from the time i edited this piece of text
 
 </div>
+
++++ :icon-sparkle-fill: New
+- [x] **`Disable 240 FPS cap`**
+- [x] **`Blue Theme`**

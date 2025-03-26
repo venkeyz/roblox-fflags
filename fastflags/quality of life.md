@@ -70,6 +70,13 @@ added by @pixelyloaf
     "DFIntTaskSchedulerTargetFps": "9999"
 }
 ```
+### Disable 240 FPS cap
+added by @pixelyloaf
+```json
+{
+    "FFlagTaskSchedulerLimitTargetFpsTo2402": "False",
+}
+```
 ### Unlimited FPS Unlocker
 added by @pixelyloaf
 ```json

@@ -25,3 +25,9 @@ date: 2025-03-12
 
 > [!CAUTION]
 > **these are meant to only be used by roblox engineers, they may be useful but they can also break stuff**
+
+<div align="center">
+
+[!ref icon="log"](/logs/changelog.md)
+
+</div>
