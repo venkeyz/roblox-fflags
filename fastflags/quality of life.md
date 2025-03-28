@@ -223,7 +223,7 @@ added by @pixelyloaf
 > **Increasing the maximum limit of preloaded assets from 100 to infinite allows games you've already played to load much faster by instantly accessing previously loaded assets.**
 
 > [!IMPORTANT]
-> **For this to be effective, the game must have been fully loaded at least once, perferably with the entire map cached.**
+> **For this to be effective, the game must have been fully loaded at least once, preferably with the entire map cached.**
 
 > [!TIP]
 > **If a game has a "Skip Loading" button, it's recommended to use it. These games typically include a countdown timer that, after reaching zero, merely confirms that all assets are loaded.**

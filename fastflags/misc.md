@@ -36,7 +36,7 @@ added by @pixelyloaf
     "FStringTencentAuthPath": "null"
 }
 ```
-### omg i cant believe roblox is that dumb to do this...
+### omg i can't believe roblox is that dumb to do this...
 added by @pixelyloaf
 ```json
 {
@@ -196,7 +196,7 @@ added by @pixelyloaf
     "FFlagRenamePassesAndGeatToSubscriptionsAndPasses": "False"
 }
 ```
-### Self Explanitory 8
+### Self Explanatory 8
 added by @pixelyloaf
 ```json
 {

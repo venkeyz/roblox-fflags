@@ -25,7 +25,7 @@ icon: devices
 
 ## ~~:icon-question: Android Roblox How to Use:~~
 > [!CAUTION]
-> SECTION TEMPORARILY REMOVED BECAUES OF HYPERION
+> SECTION TEMPORARILY REMOVED BECAUSE OF HYPERION
 
 ## :icon-question: How to Use _PlaceFilter
 1. **Add** `_PlaceFilter` **after** the **Fast Flag name**.
