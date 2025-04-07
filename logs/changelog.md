@@ -11,6 +11,16 @@ date: 26/03/2025
 
 <div align="center">
 
+## v2.0.1
+released on 07/04/2025 smth idk i forgot
+
+</div>
+
++++ :icon-sparkle-fill: New
+- [x] **`Fixed fflags``**
+
+<div align="center">
+
 ## v2.0.0
 released on 26/03/2025 23:42 from the time i edited this piece of text
 
