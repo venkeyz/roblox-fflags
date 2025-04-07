@@ -26,7 +26,7 @@ added by @pixelyloaf
 > `"Roblox automatically translates supported languages in chat."`
 ```json
 {
-    "FFlagChatTranslationEnableSystemMessage": false
+    "FFlagChatTranslationEnableSystemMessage": "False"
 }
 ```
 
@@ -74,7 +74,7 @@ added by @pixelyloaf
 added by @pixelyloaf
 ```json
 {
-    "FFlagTaskSchedulerLimitTargetFpsTo2402": "False",
+    "FFlagTaskSchedulerLimitTargetFpsTo2402": "False"
 }
 ```
 ### Unlimited FPS Unlocker
@@ -125,9 +125,11 @@ added by @pixelyloaf
 ```
 ### Stuttery Animation Fix
 added by @pixelyloaf
+
+might of messed up the spelling mb
 ```json
 {
-    "DFIntTimestepAbiterThresholdCFLThou": "300"
+    "DFIntTimestepArbiterThresholdCFLThou": "300"
 }
 ```
 ### Disable In-game Advertisements
@@ -193,7 +195,7 @@ added by @pixelyloaf
 > **You will still be kicked but the message will not show.**
 ```json
 {
-    "DFFlagDebugDisableTimeoutDisconnect: "True"
+    "DFFlagDebugDisableTimeoutDisconnect": "True"
 }
 ```
 ### Adjust Default Timeout Time

@@ -142,6 +142,7 @@ added by @pixelyloaf
 ```
 ### Invisible 1
 added by @pixelyloaf
+
 moved by @venkeyz
 > [!NOTE]
 > Stops the physics on your character from sending to the server so your character doesnt move for the server. You can move on your client.
@@ -152,6 +153,7 @@ moved by @venkeyz
 ```
 ### Invisible 2
 added by @pixelyloaf
+
 moved by @venkeyz
 > [!NOTE]
 > Locks your character's position on the server to (0, 0, 0), having the side effect of turning you invisible. This only affects the server and other clients, not you. server-sided things that rely on your position, like clicking to get tools, will not function. In some games these can be abusable.
