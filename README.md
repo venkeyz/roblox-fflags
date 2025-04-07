@@ -17,4 +17,8 @@ will accept pull requests for it though aslong it's under the fflags section and
 
 ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/pixelyloaf/roblox-fflags/retype-action.yml?style=for-the-badge)
 
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=roblox-fflags/roblox-fflags&type=Timeline)](https://www.star-history.com/#roblox-fflags/roblox-fflags&Timeline)
+
 # fflags
