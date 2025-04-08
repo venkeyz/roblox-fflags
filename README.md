@@ -19,6 +19,6 @@ will accept pull requests for it though aslong it's under the fflags section and
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=roblox-fflags/roblox-fflags&type=Timeline)](https://www.star-history.com/#roblox-fflags/roblox-fflags&Timeline)
+[![Star History Chart](https://api.star-history.com/svg?repos=pixelyloaf/roblox-fflags&type=Date)](https://www.star-history.com/#pixelyloaf/roblox-fflags&Date)
 
 # fflags
