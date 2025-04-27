@@ -6,7 +6,6 @@
 
 
 
-
 list of fflags on roblox i've seen sorted into folders
 
 removed it here it's too much work for me to manage two of the same at once
@@ -20,5 +19,9 @@ will accept pull requests for it though aslong it's under the fflags section and
 ## Star History
 
 [![Star History Chart](https://api.star-history.com/svg?repos=pixelyloaf/roblox-fflags&type=Date)](https://www.star-history.com/#pixelyloaf/roblox-fflags&Date)
+
+# no longer interested in this
+
+only unarchived for requests
 
 # fflags
