@@ -17,4 +17,5 @@ nav:
   - UI + Visuals: ui+visuals.md
   - Unorganized: unorganized.md
   - Presets:
-      - presets/index.md
+      - Community: presets/community.md
+      - Official: presets/official.md
