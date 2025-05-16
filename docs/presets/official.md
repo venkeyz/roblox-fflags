@@ -1,6 +1,5 @@
 ---
 title: OfficIal Presets
-icon: codescan-checkmark
 ---
 ### FPS boost v1
 ```json
