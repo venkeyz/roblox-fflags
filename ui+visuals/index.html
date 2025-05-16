@@ -1,0 +1,1945 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../rendering/">
+      
+      
+        <link rel="next" href="../unorganized/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+    
+    
+      
+        <title>UI+Visuals - roblox-fflags</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.342714a4.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#revert-debug-menu-ui-change" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="roblox-fflags" class="md-header__button md-logo" aria-label="roblox-fflags" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            roblox-fflags
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              UI+Visuals
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="roblox-fflags" class="md-nav__button md-logo" aria-label="roblox-fflags" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    roblox-fflags
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../abusive/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Abusive
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../audio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Audio
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../experiment/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Experiment
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../graphics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Graphics
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lighting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Lighting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../misc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Miscellaneous
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quality%20of%20life/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Quality of Life
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rendering/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Rendering
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    UI + Visuals
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    UI + Visuals
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#revert-debug-menu-ui-change" class="md-nav__link">
+    <span class="md-ellipsis">
+      Revert Debug Menu UI Change
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#red-fonthighlight-font" class="md-nav__link">
+    <span class="md-ellipsis">
+      Red Font/Highlight Font
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#voicechat-mute-toggles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Voicechat Mute Toggles
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mini-webview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mini Webview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#thick-healthbar" class="md-nav__link">
+    <span class="md-ellipsis">
+      THICK Healthbar
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#remove-parental-controls-tab" class="md-nav__link">
+    <span class="md-ellipsis">
+      Remove Parental Controls Tab
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#legacy-search" class="md-nav__link">
+    <span class="md-ellipsis">
+      Legacy Search
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#disable-profile-picture-customization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Disable Profile Picture Customization
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#disable-toast-notifications" class="md-nav__link">
+    <span class="md-ellipsis">
+      Disable Toast Notifications
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rename-communications-to-voice-enabled" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rename Communications to Voice Enabled
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#break-reduced-motion-v4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Break Reduced Motion V4
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#revert-charts-back-to-discovery" class="md-nav__link">
+    <span class="md-ellipsis">
+      Revert "Charts" back to Discovery
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#disable-sidebar" class="md-nav__link">
+    <span class="md-ellipsis">
+      Disable Sidebar
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v2-menu" class="md-nav__link">
+    <span class="md-ellipsis">
+      V2 Menu
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#custom-disconnect-message" class="md-nav__link">
+    <span class="md-ellipsis">
+      Custom Disconnect Message
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#display-fps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Display FPS
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#verified-badge" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verified Badge
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#verified-badge-on-everyone" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verified Badge on everyone
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#applies-cool-colours-to-stuff" class="md-nav__link">
+    <span class="md-ellipsis">
+      Applies cool colours to stuff
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#revert-new-invite-menu" class="md-nav__link">
+    <span class="md-ellipsis">
+      Revert new invite menu
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#revert-spacing-on-errors" class="md-nav__link">
+    <span class="md-ellipsis">
+      Revert spacing on errors
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#remove-disconnect-blurloading-blur" class="md-nav__link">
+    <span class="md-ellipsis">
+      Remove Disconnect Blur/Loading Blur
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#disable-new-chat-translation-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Disable New Chat Translation Settings
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#new-camera-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      New Camera Mode
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#custom-microprofile-scale" class="md-nav__link">
+    <span class="md-ellipsis">
+      Custom MicroProfile Scale
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#disable-new-microprofilerdebug-uis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Disable New MicroProfiler/Debug UIs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adjust-scroll-speed" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adjust Scroll Speed
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#set-custom-kick-message-length" class="md-nav__link">
+    <span class="md-ellipsis">
+      Set Custom Kick Message Length
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#disable-new-blue-theme" class="md-nav__link">
+    <span class="md-ellipsis">
+      Disable New Blue Theme
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enable-new-settings-layout" class="md-nav__link">
+    <span class="md-ellipsis">
+      Enable New Settings Layout
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#no-transparency-v4-menu-2023" class="md-nav__link">
+    <span class="md-ellipsis">
+      No Transparency V4 Menu (2023)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#subscriptions-page" class="md-nav__link">
+    <span class="md-ellipsis">
+      Subscriptions Page
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#overlay-that-shows-what-you-type" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overlay that shows what you type
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#amount-of-lines-to-show-at-once-for-above" class="md-nav__link">
+    <span class="md-ellipsis">
+      Amount of lines to show at once for above
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hides-gui" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hides gui
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dont-render-ui" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dont Render UI
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dont-render-screen-guis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Don't Render Screen GUIs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#disable-autocomplete" class="md-nav__link">
+    <span class="md-ellipsis">
+      Disable Autocomplete
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#break-top-bar-menu" class="md-nav__link">
+    <span class="md-ellipsis">
+      Break Top Bar Menu
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#break-collectible-icon" class="md-nav__link">
+    <span class="md-ellipsis">
+      Break Collectible Icon
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#disable-bubble-chat" class="md-nav__link">
+    <span class="md-ellipsis">
+      Disable Bubble Chat
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#disable-avatar-chat" class="md-nav__link">
+    <span class="md-ellipsis">
+      Disable Avatar Chat
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#remove-vc-beta-badge" class="md-nav__link">
+    <span class="md-ellipsis">
+      Remove VC beta badge
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vr-controller-transparency" class="md-nav__link">
+    <span class="md-ellipsis">
+      VR Controller transparency
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#disable-vr-collision-fade" class="md-nav__link">
+    <span class="md-ellipsis">
+      Disable VR Collision Fade
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#limit-videos-playing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Limit Videos Playing
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#disable-dsa-reporting-in-game" class="md-nav__link">
+    <span class="md-ellipsis">
+      Disable DSA Reporting In-Game
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#desktop-app-dev-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Desktop App Dev Tools
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enable-events-tabchange-events-tab-url" class="md-nav__link">
+    <span class="md-ellipsis">
+      Enable Events Tab/Change Events Tab URL
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#better-trackpad-scrolling" class="md-nav__link">
+    <span class="md-ellipsis">
+      Better Trackpad Scrolling
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reset-character-instead-of-respawn-in-experience-menu" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reset Character instead of Respawn in Experience Menu
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#blue-theme" class="md-nav__link">
+    <span class="md-ellipsis">
+      Blue Theme
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../unorganized/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Unorganized
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" >
+        
+          
+          <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Presets
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_12">
+            <span class="md-nav__icon md-icon"></span>
+            Presets
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../presets/community/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Community
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../presets/official/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Official
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#revert-debug-menu-ui-change" class="md-nav__link">
+    <span class="md-ellipsis">
+      Revert Debug Menu UI Change
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#red-fonthighlight-font" class="md-nav__link">
+    <span class="md-ellipsis">
+      Red Font/Highlight Font
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#voicechat-mute-toggles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Voicechat Mute Toggles
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mini-webview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mini Webview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#thick-healthbar" class="md-nav__link">
+    <span class="md-ellipsis">
+      THICK Healthbar
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#remove-parental-controls-tab" class="md-nav__link">
+    <span class="md-ellipsis">
+      Remove Parental Controls Tab
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#legacy-search" class="md-nav__link">
+    <span class="md-ellipsis">
+      Legacy Search
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#disable-profile-picture-customization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Disable Profile Picture Customization
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#disable-toast-notifications" class="md-nav__link">
+    <span class="md-ellipsis">
+      Disable Toast Notifications
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rename-communications-to-voice-enabled" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rename Communications to Voice Enabled
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#break-reduced-motion-v4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Break Reduced Motion V4
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#revert-charts-back-to-discovery" class="md-nav__link">
+    <span class="md-ellipsis">
+      Revert "Charts" back to Discovery
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#disable-sidebar" class="md-nav__link">
+    <span class="md-ellipsis">
+      Disable Sidebar
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v2-menu" class="md-nav__link">
+    <span class="md-ellipsis">
+      V2 Menu
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#custom-disconnect-message" class="md-nav__link">
+    <span class="md-ellipsis">
+      Custom Disconnect Message
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#display-fps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Display FPS
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#verified-badge" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verified Badge
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#verified-badge-on-everyone" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verified Badge on everyone
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#applies-cool-colours-to-stuff" class="md-nav__link">
+    <span class="md-ellipsis">
+      Applies cool colours to stuff
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#revert-new-invite-menu" class="md-nav__link">
+    <span class="md-ellipsis">
+      Revert new invite menu
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#revert-spacing-on-errors" class="md-nav__link">
+    <span class="md-ellipsis">
+      Revert spacing on errors
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#remove-disconnect-blurloading-blur" class="md-nav__link">
+    <span class="md-ellipsis">
+      Remove Disconnect Blur/Loading Blur
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#disable-new-chat-translation-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Disable New Chat Translation Settings
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#new-camera-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      New Camera Mode
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#custom-microprofile-scale" class="md-nav__link">
+    <span class="md-ellipsis">
+      Custom MicroProfile Scale
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#disable-new-microprofilerdebug-uis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Disable New MicroProfiler/Debug UIs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adjust-scroll-speed" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adjust Scroll Speed
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#set-custom-kick-message-length" class="md-nav__link">
+    <span class="md-ellipsis">
+      Set Custom Kick Message Length
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#disable-new-blue-theme" class="md-nav__link">
+    <span class="md-ellipsis">
+      Disable New Blue Theme
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enable-new-settings-layout" class="md-nav__link">
+    <span class="md-ellipsis">
+      Enable New Settings Layout
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#no-transparency-v4-menu-2023" class="md-nav__link">
+    <span class="md-ellipsis">
+      No Transparency V4 Menu (2023)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#subscriptions-page" class="md-nav__link">
+    <span class="md-ellipsis">
+      Subscriptions Page
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#overlay-that-shows-what-you-type" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overlay that shows what you type
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#amount-of-lines-to-show-at-once-for-above" class="md-nav__link">
+    <span class="md-ellipsis">
+      Amount of lines to show at once for above
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hides-gui" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hides gui
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dont-render-ui" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dont Render UI
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dont-render-screen-guis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Don't Render Screen GUIs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#disable-autocomplete" class="md-nav__link">
+    <span class="md-ellipsis">
+      Disable Autocomplete
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#break-top-bar-menu" class="md-nav__link">
+    <span class="md-ellipsis">
+      Break Top Bar Menu
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#break-collectible-icon" class="md-nav__link">
+    <span class="md-ellipsis">
+      Break Collectible Icon
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#disable-bubble-chat" class="md-nav__link">
+    <span class="md-ellipsis">
+      Disable Bubble Chat
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#disable-avatar-chat" class="md-nav__link">
+    <span class="md-ellipsis">
+      Disable Avatar Chat
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#remove-vc-beta-badge" class="md-nav__link">
+    <span class="md-ellipsis">
+      Remove VC beta badge
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vr-controller-transparency" class="md-nav__link">
+    <span class="md-ellipsis">
+      VR Controller transparency
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#disable-vr-collision-fade" class="md-nav__link">
+    <span class="md-ellipsis">
+      Disable VR Collision Fade
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#limit-videos-playing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Limit Videos Playing
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#disable-dsa-reporting-in-game" class="md-nav__link">
+    <span class="md-ellipsis">
+      Disable DSA Reporting In-Game
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#desktop-app-dev-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Desktop App Dev Tools
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enable-events-tabchange-events-tab-url" class="md-nav__link">
+    <span class="md-ellipsis">
+      Enable Events Tab/Change Events Tab URL
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#better-trackpad-scrolling" class="md-nav__link">
+    <span class="md-ellipsis">
+      Better Trackpad Scrolling
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reset-character-instead-of-respawn-in-experience-menu" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reset Character instead of Respawn in Experience Menu
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#blue-theme" class="md-nav__link">
+    <span class="md-ellipsis">
+      Blue Theme
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>UI + Visuals</h1>
+
+<h3 id="revert-debug-menu-ui-change">Revert Debug Menu UI Change</h3>
+<p>added by @pixelyloaf</p>
+<pre><code class="language-json">{
+    &quot;FFlagImproveMicroprofilerReadability&quot;: &quot;False&quot;
+}
+</code></pre>
+<h3 id="red-fonthighlight-font">Red Font/Highlight Font</h3>
+<p>added by @pixelyloaf</p>
+<pre><code class="language-json">{
+    &quot;FStringDebugHighlightSpecificFont&quot;: &quot;rbxasset://fonts/families/BuilderSans.json&quot;
+}
+</code></pre>
+<h3 id="voicechat-mute-toggles">Voicechat Mute Toggles</h3>
+<p>added by @pixelyloaf
+<img alt="example" src="https://github.com/user-attachments/assets/186d3b58-5560-4ea7-ba6f-cc62f8ab5351" /></p>
+<pre><code class="language-json">{
+    &quot;FFlagMuteTogglesEnableIXP&quot;: &quot;False&quot;
+}
+</code></pre>
+<h3 id="mini-webview">Mini Webview</h3>
+<p>added by @pixelyloaf</p>
+<pre><code class="language-json">{
+    &quot;FFlagWebViewProtocol&quot;: &quot;False&quot;
+}
+</code></pre>
+<h3 id="thick-healthbar">THICK Healthbar</h3>
+<p>added by @pixelyloaf</p>
+<pre><code class="language-json">{
+    &quot;FFlagUpdateHealthBar&quot;: &quot;True&quot;
+}
+</code></pre>
+<h3 id="remove-parental-controls-tab">Remove Parental Controls Tab</h3>
+<p>added by @pixelyloaf</p>
+<pre><code class="language-json">{
+    &quot;FFlagLuaAppsEnableParentalControlsTab&quot;: &quot;False&quot;
+}
+</code></pre>
+<h3 id="legacy-search">Legacy Search</h3>
+<p>added by @pixelyloaf</p>
+<pre><code class="language-json">{
+    &quot;FFlagAXSearchLandingPageIXPEnabled4&quot;: &quot;False&quot;
+}
+</code></pre>
+<h3 id="disable-profile-picture-customization">Disable Profile Picture Customization</h3>
+<p>added by @pixelyloaf</p>
+<pre><code class="language-json">{
+    &quot;FFlagAXDefaultAvatarToShopEnabled3&quot;: &quot;False&quot;
+}
+</code></pre>
+<p>added by @pixelyloaf</p>
+<pre><code class="language-json">{
+    &quot;FFlagEnableNewChatTabExperiment5&quot;: &quot;False
+}
+</code></pre>
+<h3 id="disable-toast-notifications">Disable Toast Notifications</h3>
+<p>added by @pixelyloaf</p>
+<pre><code class="language-json">{
+    &quot;FFlagToastNotificationsProtocolEnabled2&quot;: &quot;False&quot;
+}
+</code></pre>
+<h3 id="rename-communications-to-voice-enabled">Rename Communications to Voice Enabled</h3>
+<p>added by @pixelyloaf</p>
+<pre><code class="language-json">{
+    &quot;FFlagGameDetailsDecoupledCommunication&quot;: &quot;False&quot;
+}
+</code></pre>
+<h3 id="break-reduced-motion-v4">Break Reduced Motion V4</h3>
+<p>added by @pixelyloaf
+<img alt="image" src="https://github.com/user-attachments/assets/cfdc9732-084e-4c09-bc43-8039a3bf0d89" /></p>
+<pre><code class="language-json">{
+    &quot;FFlagFixReducedMotionStuckIGM2&quot;: &quot;False&quot;
+}
+</code></pre>
+<h3 id="revert-charts-back-to-discovery">Revert "Charts" back to Discovery</h3>
+<p>added by @pixelyloaf</p>
+<pre><code class="language-json">{
+    &quot;FFlagLuaChartsPageRenameIXP&quot;: &quot;False&quot;
+}
+</code></pre>
+<h3 id="disable-sidebar">Disable Sidebar</h3>
+<p>added by @pixelyloaf</p>
+<pre><code class="language-json">{
+    &quot;FFlagEnableNavBarLabels3&quot;: &quot;False&quot;
+}
+</code></pre>
+<h3 id="v2-menu">V2 Menu</h3>
+<p>added by @pixelyloaf</p>
+<pre><code class="language-json">{
+    &quot;FIntNewInGameMenuPercentRollout3&quot;: &quot;100&quot;,
+    &quot;FFlagEnableInGameMenuControls&quot;: &quot;False&quot;,
+    &quot;FFlagDisableDisableNewIGMinDUA&quot;: &quot;True&quot;,
+    &quot;FFlagEnableInGameMenuChromeABTest4&quot;: &quot;False&quot;,
+    &quot;FFlagEnableInGameMenuSongbirdABTest&quot;: &quot;False&quot;
+}
+</code></pre>
+<h3 id="custom-disconnect-message">Custom Disconnect Message</h3>
+<p>added by @pixelyloaf</p>
+<pre><code class="language-json">{
+    &quot;FFlagReconnectDisabled&quot;: &quot;True&quot;,
+    &quot;FStringReconnectDisabledReason&quot;: &quot;disconnection jumpscare&quot;
+}
+</code></pre>
+<h3 id="display-fps">Display FPS</h3>
+<p>added by @pixelyloaf</p>
+<pre><code class="language-json">{
+    &quot;FFlagDebugDisplayFPS&quot;: &quot;True&quot;
+}
+</code></pre>
+<h3 id="verified-badge">Verified Badge</h3>
+<p>added by @pixelyloaf</p>
+<blockquote>
+<p>[!NOTE]
+Cliensided only</p>
+</blockquote>
+<pre><code class="language-json">{
+    &quot;FStringWhitelistVerifiedUserId&quot;: &quot;UserID&quot;
+}
+</code></pre>
+<h3 id="verified-badge-on-everyone">Verified Badge on everyone</h3>
+<p>added by @pixelyloaf</p>
+<blockquote>
+<p>[!NOTE]
+Clientsided only</p>
+</blockquote>
+<pre><code class="language-json">{
+    &quot;FFlagOverridePlayerVerifiedBadge&quot;: &quot;True&quot;
+}
+</code></pre>
+<h3 id="applies-cool-colours-to-stuff">Applies cool colours to stuff</h3>
+<p>added by @pixelyloaf</p>
+<pre><code class="language-json">{
+    &quot;FFlagDebugDisplayUnthemedInstances&quot;: &quot;True&quot;
+}
+</code></pre>
+<h3 id="revert-new-invite-menu">Revert new invite menu</h3>
+<p>added by @pixelyloaf</p>
+<pre><code class="language-json">{
+    &quot;FFlagEnableNewInviteMenuIXP2&quot;: &quot;False&quot;
+}
+</code></pre>
+<h3 id="revert-spacing-on-errors">Revert spacing on errors</h3>
+<p>added by @pixelyloaf</p>
+<pre><code class="language-json">{
+    &quot;FFlagErrorPromptResizesHeight&quot;: &quot;False&quot;
+}
+</code></pre>
+<h3 id="remove-disconnect-blurloading-blur">Remove Disconnect Blur/Loading Blur</h3>
+<p>added by @pixelyloaf</p>
+<pre><code class="language-json">{
+    &quot;FIntRobloxGuiBlurIntensity&quot;: &quot;0&quot;
+}
+</code></pre>
+<h3 id="disable-new-chat-translation-settings">Disable New Chat Translation Settings</h3>
+<p>added by @pixelyloaf</p>
+<pre><code class="language-json">{
+    &quot;FFlagChatTranslationSettingEnabled3&quot;: &quot;False&quot;
+}
+</code></pre>
+<h3 id="new-camera-mode">New Camera Mode</h3>
+<p>added by @pixelyloaf</p>
+<pre><code class="language-json">{
+    &quot;FFlagNewCameraControls&quot;: &quot;True&quot;
+}
+</code></pre>
+<h3 id="custom-microprofile-scale">Custom MicroProfile Scale</h3>
+<p>added by @pixelyloaf</p>
+<pre><code class="language-json">{
+    &quot;DFIntMicroProfilerDpiScaleOverride&quot;: &quot;100&quot;
+}
+</code></pre>
+<h3 id="disable-new-microprofilerdebug-uis">Disable New MicroProfiler/Debug UIs</h3>
+<p>added by @pixelyloaf</p>
+<pre><code class="language-json">{
+    &quot;FFlagImproveMicroprofilerReadability&quot;: &quot;False&quot;
+}
+</code></pre>
+<h3 id="adjust-scroll-speed">Adjust Scroll Speed</h3>
+<p>added by @pixelyloaf</p>
+<pre><code class="language-json">{
+    &quot;FIntScrollWheelDeltaAmount&quot;: &quot;140&quot;
+}
+</code></pre>
+<h3 id="set-custom-kick-message-length">Set Custom Kick Message Length</h3>
+<p>added by @pixelyloaf</p>
+<pre><code class="language-json">{
+    &quot;FIntMaxKickMessageLength&quot;: &quot;1&quot;
+}
+</code></pre>
+<h3 id="disable-new-blue-theme">Disable New Blue Theme</h3>
+<p>added by @pixelyloaf</p>
+<pre><code class="language-json">{
+    &quot;FFlagLuaAppUseUIBloxColorPalettes1&quot;: &quot;False&quot;,
+    &quot;FFlagLuaAppEnableFoundationColors7&quot;: &quot;False&quot;
+}
+</code></pre>
+<h3 id="enable-new-settings-layout">Enable New Settings Layout</h3>
+<p>added by @pixelyloaf</p>
+<pre><code class="language-json">{
+    &quot;FFlagInExperienceMenuReorderFirstVariant2&quot;: &quot;True&quot;
+}
+</code></pre>
+<h3 id="no-transparency-v4-menu-2023">No Transparency V4 Menu <strong>(2023)</strong></h3>
+<p>added by @pixelyloaf</p>
+<pre><code class="language-json">{
+    &quot;FStringInGameMenuModernizationStickyBarForcedUserIds&quot;: &quot;UserID&quot;
+}
+</code></pre>
+<h3 id="subscriptions-page">Subscriptions Page</h3>
+<p>added by @pixelyloaf</p>
+<pre><code class="language-json">{
+    &quot;FFlagLuaDevSubsEnabled&quot;: &quot;True&quot;
+}
+</code></pre>
+<h3 id="overlay-that-shows-what-you-type">Overlay that shows what you type</h3>
+<p>added by @pixelyloaf</p>
+<pre><code class="language-json">{
+    &quot;FFlagDebugTextBoxServiceShowOverlay&quot;: &quot;True&quot;
+}
+</code></pre>
+<h3 id="amount-of-lines-to-show-at-once-for-above">Amount of lines to show at once for above</h3>
+<p>added by @pixelyloaf</p>
+<pre><code class="language-json">{
+    &quot;DFIntTextBoxServiceHistorySize&quot;: &quot;1&quot;
+}
+</code></pre>
+<h3 id="hides-gui">Hides gui</h3>
+<p>added by @pixelyloaf</p>
+<pre><code class="language-json">{
+    &quot;DFIntTextBoxServiceHistorySize&quot;: &quot;1&quot;
+}
+</code></pre>
+<h3 id="dont-render-ui">Dont Render UI</h3>
+<p>added by @pixelyloaf</p>
+<pre><code class="language-json">{
+    &quot;FFlagDebugDontRenderUI&quot;: &quot;True&quot;
+}
+</code></pre>
+<h3 id="dont-render-screen-guis">Don't Render Screen GUIs</h3>
+<p>added by @pixelyloaf</p>
+<pre><code class="language-json">{
+    &quot;FFlagDebugDontRenderScreenGui&quot;: &quot;True&quot;
+}
+</code></pre>
+<h3 id="disable-autocomplete">Disable Autocomplete</h3>
+<p>added by @pixelyloaf</p>
+<pre><code class="language-json">{
+    &quot;FFlagEnableCommandAutocomplete&quot;: &quot;False&quot;
+}
+</code></pre>
+<h3 id="break-top-bar-menu">Break Top Bar Menu</h3>
+<p>added by @pixelyloaf</p>
+<pre><code class="language-json">{
+    &quot;FStringNewInGameMenuForceds&quot;: &quot;UserID&quot;,
+    &quot;FFlagEnableInGameMenuChrome&quot;: &quot;True&quot;
+}
+</code></pre>
+<h3 id="break-collectible-icon">Break Collectible Icon</h3>
+<p>added by @pixelyloaf</p>
+<pre><code class="language-json">{
+    &quot;FFlagDisplayCollectiblesIcon&quot;: &quot;False&quot;
+}
+</code></pre>
+<h3 id="disable-bubble-chat">Disable Bubble Chat</h3>
+<p>added by @pixelyloaf</p>
+<pre><code class="language-json">{
+    &quot;FFlagEnableBubbleChatFromChatService&quot;: &quot;False&quot;
+}
+</code></pre>
+<h3 id="disable-avatar-chat">Disable Avatar Chat</h3>
+<p>added by @pixelyloaf</p>
+<pre><code class="language-json">{
+    &quot;FFlagAvatarChatServiceEnabled3&quot;: &quot;False&quot;
+}
+</code></pre>
+<h3 id="remove-vc-beta-badge">Remove VC beta badge</h3>
+<p>added by @pixelyloaf</p>
+<pre><code class="language-json">{
+    &quot;FFlagVoiceBetaBadge&quot;: &quot;False&quot;,
+    &quot;FFlagTopBarUseNewBadge&quot;: &quot;False&quot;,
+    &quot;FFlagBetaBadgeLearnMoreLinkFormview&quot;: &quot;False&quot;,
+    &quot;FFlagControlBetaBadgeWithGuac&quot;: &quot;False&quot;,
+    &quot;FStringVoiceBetaBadgeLearnMoreLink&quot;: &quot;null&quot;
+}
+</code></pre>
+<h3 id="vr-controller-transparency">VR Controller transparency</h3>
+<p>added by @pixelyloaf</p>
+<pre><code class="language-json">{
+    &quot;FIntVRTouchControllerTransparency&quot;: &quot;0&quot;
+}
+</code></pre>
+<h3 id="disable-vr-collision-fade">Disable VR Collision Fade</h3>
+<p>added by @pixelyloaf</p>
+<pre><code class="language-json">{
+    &quot;FFlagViewCollisionFadeToBlackInVR&quot;: &quot;False&quot;
+}
+</code></pre>
+<h3 id="limit-videos-playing">Limit Videos Playing</h3>
+<p>added by @pixelyloaf</p>
+<pre><code class="language-json">{
+    &quot;DFIntVideoMaxNumberOfVideosPlayting&quot;: &quot;0&quot;
+}
+</code></pre>
+<h3 id="disable-dsa-reporting-in-game">Disable DSA Reporting In-Game</h3>
+<p>added by @pixelyloaf</p>
+<pre><code class="language-json">{
+    &quot;FFlagDSAIllegalContentReporting2&quot;: &quot;False&quot;
+}
+</code></pre>
+<h3 id="desktop-app-dev-tools">Desktop App Dev Tools</h3>
+<p>added by @pixelyloaf</p>
+<blockquote>
+<p>[!IMPORTANT]
+Only works on web view windows like profiles, Ctrl + Shift + I</p>
+</blockquote>
+<pre><code class="language-json">{
+    &quot;FFlagDebugEnableNewWebView2DevTool&quot;: &quot;True&quot;
+}
+</code></pre>
+<h3 id="enable-events-tabchange-events-tab-url">Enable Events Tab/Change Events Tab URL</h3>
+<p>added by @pixelyloaf</p>
+<pre><code class="language-json">{
+    &quot;FFlagPlatformEventEnabled2&quot;: &quot;True&quot;,
+    &quot;FStringPlatformEventUrl&quot;: &quot;https://udm14.com/&quot; 
+}
+</code></pre>
+<h3 id="better-trackpad-scrolling">Better Trackpad Scrolling</h3>
+<p>added by @pixelyloaf</p>
+<pre><code class="language-json">{
+    &quot;FFlagBetterTrackpadScroling&quot;: &quot;True&quot;
+}
+</code></pre>
+<h3 id="reset-character-instead-of-respawn-in-experience-menu">Reset Character instead of Respawn in Experience Menu</h3>
+<p>added by @pixelyloaf</p>
+<pre><code class="language-json">{
+    &quot;FFlagInExperienceMenuResetButtonTextToRespawn&quot;: &quot;False&quot;
+}
+</code></pre>
+<h3 id="blue-theme">Blue Theme</h3>
+<p>added by @pixelyloaf</p>
+<pre><code class="language-json">{
+    &quot;FFlagLuaAppEnableFoundationColors5&quot;: &quot;True&quot;
+}
+</code></pre>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": [{"navigation.tabs": false}, "navigation.sections"], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      
+    
+  </body>
+</html>

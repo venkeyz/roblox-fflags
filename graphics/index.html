@@ -1,0 +1,1708 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../experiment/">
+      
+      
+        <link rel="next" href="../lighting/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+    
+    
+      
+        <title>Graphics - roblox-fflags</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.342714a4.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#set-how-many-pixels-to-render" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="roblox-fflags" class="md-header__button md-logo" aria-label="roblox-fflags" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            roblox-fflags
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Graphics
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="roblox-fflags" class="md-nav__button md-logo" aria-label="roblox-fflags" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    roblox-fflags
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../abusive/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Abusive
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../audio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Audio
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../experiment/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Experiment
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Graphics
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Graphics
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#set-how-many-pixels-to-render" class="md-nav__link">
+    <span class="md-ellipsis">
+      Set how many pixels to render
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#disable-highlights" class="md-nav__link">
+    <span class="md-ellipsis">
+      Disable Highlights
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enable-drs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Enable DRS
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#move-pre-render-phase-25-performance-boost" class="md-nav__link">
+    <span class="md-ellipsis">
+      Move Pre-Render Phase [~25 Performance Boost]
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#increased-grass-motion-no-grass-motion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Increased Grass Motion &amp; No Grass Motion
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enable-highlight-outlines-on-any-rendering-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      Enable Highlight Outlines on any Rendering API
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#no-bloomclouds" class="md-nav__link">
+    <span class="md-ellipsis">
+      No Bloom/Clouds
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#render-occlusion-culling" class="md-nav__link">
+    <span class="md-ellipsis">
+      Render Occlusion Culling
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#increased-particles-on-low-graphics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Increased Particles on low graphics
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#makes-stuff-slightly-brighter" class="md-nav__link">
+    <span class="md-ellipsis">
+      Makes stuff slightly brighter
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hyperthreading" class="md-nav__link">
+    <span class="md-ellipsis">
+      HyperThreading
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#maximum-threads" class="md-nav__link">
+    <span class="md-ellipsis">
+      Maximum Threads
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#minimum-threads" class="md-nav__link">
+    <span class="md-ellipsis">
+      Minimum Threads
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#smoother-terrain" class="md-nav__link">
+    <span class="md-ellipsis">
+      Smoother Terrain
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#force-graphics-quality-level" class="md-nav__link">
+    <span class="md-ellipsis">
+      Force Graphics Quality Level
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#disable-player-shadows" class="md-nav__link">
+    <span class="md-ellipsis">
+      Disable Player Shadows
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#preserve-rendering-quality-with-display-setting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Preserve rendering quality with display setting
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#low-graphics-quality-w-max-render-distancefrm-quality-levels" class="md-nav__link">
+    <span class="md-ellipsis">
+      Low Graphics Quality w/ Max Render Distance/FRM Quality Levels
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#frm-21-graphics-quality-slider" class="md-nav__link">
+    <span class="md-ellipsis">
+      FRM 21 Graphics Quality Slider
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#low-render-distance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Low render distance
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#limit-light-updates" class="md-nav__link">
+    <span class="md-ellipsis">
+      Limit light updates
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#disables-fade-in-and-out-animation-every-light-update" class="md-nav__link">
+    <span class="md-ellipsis">
+      Disables fade in and out animation every light update
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#make-avatars-shiny" class="md-nav__link">
+    <span class="md-ellipsis">
+      Make avatars shiny
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#disable-postfx" class="md-nav__link">
+    <span class="md-ellipsis">
+      Disable PostFX
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pause-voxelizerdisable-baked-shadows" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pause Voxelizer/Disable Baked Shadows
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#grey-sky" class="md-nav__link">
+    <span class="md-ellipsis">
+      Grey sky
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#force-lod-on-meshes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Force LOD on Meshes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lighting-attenuation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lighting Attenuation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enable-gpulightculling" class="md-nav__link">
+    <span class="md-ellipsis">
+      Enable GPULightCulling
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enable-cpulightculling" class="md-nav__link">
+    <span class="md-ellipsis">
+      Enable CPULightCulling
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#frame-buffer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Frame buffer
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#low-quality-terrain-textures" class="md-nav__link">
+    <span class="md-ellipsis">
+      Low Quality Terrain Textures
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#force-texture-quality" class="md-nav__link">
+    <span class="md-ellipsis">
+      Force Texture Quality
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lower-quality-textures" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lower Quality Textures
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#no-avatar-textures" class="md-nav__link">
+    <span class="md-ellipsis">
+      No avatar textures
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#texture-manager" class="md-nav__link">
+    <span class="md-ellipsis">
+      Texture Manager
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#remove-grass" class="md-nav__link">
+    <span class="md-ellipsis">
+      Remove Grass
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#force-msaa" class="md-nav__link">
+    <span class="md-ellipsis">
+      Force MSAA
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#shadowmap-bias" class="md-nav__link">
+    <span class="md-ellipsis">
+      ShadowMap Bias
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#limits-number-of-animations-being-played" class="md-nav__link">
+    <span class="md-ellipsis">
+      Limits number of animations being played
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lighting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Lighting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../misc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Miscellaneous
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quality%20of%20life/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Quality of Life
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rendering/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Rendering
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ui%2Bvisuals/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    UI + Visuals
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../unorganized/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Unorganized
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" >
+        
+          
+          <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Presets
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_12">
+            <span class="md-nav__icon md-icon"></span>
+            Presets
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../presets/community/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Community
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../presets/official/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Official
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#set-how-many-pixels-to-render" class="md-nav__link">
+    <span class="md-ellipsis">
+      Set how many pixels to render
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#disable-highlights" class="md-nav__link">
+    <span class="md-ellipsis">
+      Disable Highlights
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enable-drs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Enable DRS
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#move-pre-render-phase-25-performance-boost" class="md-nav__link">
+    <span class="md-ellipsis">
+      Move Pre-Render Phase [~25 Performance Boost]
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#increased-grass-motion-no-grass-motion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Increased Grass Motion &amp; No Grass Motion
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enable-highlight-outlines-on-any-rendering-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      Enable Highlight Outlines on any Rendering API
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#no-bloomclouds" class="md-nav__link">
+    <span class="md-ellipsis">
+      No Bloom/Clouds
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#render-occlusion-culling" class="md-nav__link">
+    <span class="md-ellipsis">
+      Render Occlusion Culling
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#increased-particles-on-low-graphics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Increased Particles on low graphics
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#makes-stuff-slightly-brighter" class="md-nav__link">
+    <span class="md-ellipsis">
+      Makes stuff slightly brighter
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hyperthreading" class="md-nav__link">
+    <span class="md-ellipsis">
+      HyperThreading
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#maximum-threads" class="md-nav__link">
+    <span class="md-ellipsis">
+      Maximum Threads
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#minimum-threads" class="md-nav__link">
+    <span class="md-ellipsis">
+      Minimum Threads
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#smoother-terrain" class="md-nav__link">
+    <span class="md-ellipsis">
+      Smoother Terrain
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#force-graphics-quality-level" class="md-nav__link">
+    <span class="md-ellipsis">
+      Force Graphics Quality Level
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#disable-player-shadows" class="md-nav__link">
+    <span class="md-ellipsis">
+      Disable Player Shadows
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#preserve-rendering-quality-with-display-setting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Preserve rendering quality with display setting
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#low-graphics-quality-w-max-render-distancefrm-quality-levels" class="md-nav__link">
+    <span class="md-ellipsis">
+      Low Graphics Quality w/ Max Render Distance/FRM Quality Levels
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#frm-21-graphics-quality-slider" class="md-nav__link">
+    <span class="md-ellipsis">
+      FRM 21 Graphics Quality Slider
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#low-render-distance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Low render distance
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#limit-light-updates" class="md-nav__link">
+    <span class="md-ellipsis">
+      Limit light updates
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#disables-fade-in-and-out-animation-every-light-update" class="md-nav__link">
+    <span class="md-ellipsis">
+      Disables fade in and out animation every light update
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#make-avatars-shiny" class="md-nav__link">
+    <span class="md-ellipsis">
+      Make avatars shiny
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#disable-postfx" class="md-nav__link">
+    <span class="md-ellipsis">
+      Disable PostFX
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pause-voxelizerdisable-baked-shadows" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pause Voxelizer/Disable Baked Shadows
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#grey-sky" class="md-nav__link">
+    <span class="md-ellipsis">
+      Grey sky
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#force-lod-on-meshes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Force LOD on Meshes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lighting-attenuation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lighting Attenuation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enable-gpulightculling" class="md-nav__link">
+    <span class="md-ellipsis">
+      Enable GPULightCulling
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enable-cpulightculling" class="md-nav__link">
+    <span class="md-ellipsis">
+      Enable CPULightCulling
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#frame-buffer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Frame buffer
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#low-quality-terrain-textures" class="md-nav__link">
+    <span class="md-ellipsis">
+      Low Quality Terrain Textures
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#force-texture-quality" class="md-nav__link">
+    <span class="md-ellipsis">
+      Force Texture Quality
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lower-quality-textures" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lower Quality Textures
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#no-avatar-textures" class="md-nav__link">
+    <span class="md-ellipsis">
+      No avatar textures
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#texture-manager" class="md-nav__link">
+    <span class="md-ellipsis">
+      Texture Manager
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#remove-grass" class="md-nav__link">
+    <span class="md-ellipsis">
+      Remove Grass
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#force-msaa" class="md-nav__link">
+    <span class="md-ellipsis">
+      Force MSAA
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#shadowmap-bias" class="md-nav__link">
+    <span class="md-ellipsis">
+      ShadowMap Bias
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#limits-number-of-animations-being-played" class="md-nav__link">
+    <span class="md-ellipsis">
+      Limits number of animations being played
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>Graphics</h1>
+
+<h3 id="set-how-many-pixels-to-render">Set how many pixels to render</h3>
+<p>added by @pixelyloaf</p>
+<pre><code class="language-json">{
+    &quot;DFIntDebugDynamicRenderKiloPixels&quot;: &quot;1&quot;
+}
+</code></pre>
+<h3 id="disable-highlights">Disable Highlights</h3>
+<p>added by @pixelyloaf</p>
+<pre><code class="language-json">{
+    &quot;DFFlagRenderHighlightMangerPrepare&quot;: &quot;True&quot;
+}
+</code></pre>
+<h3 id="enable-drs">Enable DRS</h3>
+<p>added by @pixelyloaf</p>
+<pre><code class="language-json">{
+    &quot;FFlagRenderDynamicResolutionScale12&quot;: &quot;True&quot;
+}
+</code></pre>
+<h3 id="move-pre-render-phase-25-performance-boost">Move Pre-Render Phase [~25 Performance Boost]</h3>
+<p>added by @pixelyloaf
+==- :icon-question: View Full Documentation</p>
+<blockquote>
+<p>[!IMPORTANT]
+This FastFlag moves the Pre-Render task to an off thread after all other tasks are completed. By default, Pre-Render runs first, forcing the render thread to wait until the Pre-Render process finishes before it can start rendering a frame.</p>
+<p>[!NOTE]
+With this FastFlag enabled, Pre-Renderer is executed while the main thread is processing the previous frame. This adjustment allows the main thread to proceed without waiting for Pre-Renderer, leading to increased framerates at the expense of some frame latency.</p>
+<p>[!TIP]
+This flag is most effective in CPU-bound scenarios.</p>
+<p>[!CAUTION]
+Enabling this FastFlag may lead to input lag &amp; crashes
+===</p>
+</blockquote>
+<pre><code class="language-json">{
+    &quot;FFLagMovePrerender&quot;: &quot;True&quot;
+}
+</code></pre>
+<h3 id="increased-grass-motion-no-grass-motion">Increased Grass Motion &amp; No Grass Motion</h3>
+<p>added by @pixelyloaf</p>
+<pre><code class="language-json">{
+    &quot;FIntGrassMovementReducedMotionFactor&quot;: &quot;999&quot;
+}
+</code></pre>
+<p>added by @pixelyloaf</p>
+<pre><code class="language-json">{
+    &quot;FIntGrassMovementReducedMotionFactor&quot;: &quot;0&quot;
+}
+</code></pre>
+<h3 id="enable-highlight-outlines-on-any-rendering-api">Enable Highlight Outlines on any Rendering API</h3>
+<p>added by @pixelyloaf</p>
+<pre><code class="language-json">{
+    &quot;FFlagHighlightOutlinesOnMobile&quot;: &quot;True&quot;
+}
+</code></pre>
+<h3 id="no-bloomclouds">No Bloom/Clouds</h3>
+<p>added by @pixelyloaf</p>
+<pre><code class="language-json">{
+    &quot;FFlagRenderNoLowFrmBloom&quot;: &quot;False&quot;
+}
+</code></pre>
+<h3 id="render-occlusion-culling">Render Occlusion Culling</h3>
+<p>added by @pixelyloaf</p>
+<pre><code class="language-json">{
+    &quot;DFFlagUseVisBugCheks&quot;: &quot;True&quot;,
+    &quot;FFlagEnableVisBugChecks27&quot;: &quot;True&quot;,
+    &quot;FFlagVisBugChecksThreadYield&quot;: &quot;True&quot;,
+    &quot;FIntEnableVisBugChecksHundredthPercent27&quot;: &quot;100&quot;
+}
+</code></pre>
+<h3 id="increased-particles-on-low-graphics">Increased Particles on low graphics</h3>
+<p>added by @pixelyloaf</p>
+<pre><code class="language-json">{
+    &quot;FFlagDebugDeterministicParticles&quot;: &quot;True&quot;
+}
+</code></pre>
+<h3 id="makes-stuff-slightly-brighter">Makes stuff slightly brighter</h3>
+<p>added by @pixelyloaf</p>
+<pre><code class="language-json">{
+    &quot;FFlagRenderFixFog&quot;: &quot;True&quot;
+}
+</code></pre>
+<h3 id="hyperthreading">HyperThreading</h3>
+<p>added by @pixelyloaf</p>
+<pre><code class="language-json">{
+    &quot;FFlagDebugCheckRenderThreading&quot;: &quot;True&quot;,
+    &quot;FFlagRenderDebugCheckThreading2&quot;: True
+}
+</code></pre>
+<h3 id="maximum-threads">Maximum Threads</h3>
+<p>added by @pixelyloaf</p>
+<pre><code class="language-json">{
+    &quot;FIntRuntimeMaxNumOfThreads&quot;: &quot;2400&quot;
+}
+</code></pre>
+<h3 id="minimum-threads">Minimum Threads</h3>
+<p>added by @pixelyloaf</p>
+<pre><code class="language-json">{
+    &quot;FIntTaskSchedularThreadMin&quot;: &quot;3&quot;
+}
+</code></pre>
+<h3 id="smoother-terrain">Smoother Terrain</h3>
+<p>added by @pixelyloaf</p>
+<pre><code class="language-json">{
+    &quot;FFlagDebugRenderingSetDeterministic&quot;: &quot;True&quot;
+}
+</code></pre>
+<h3 id="force-graphics-quality-level">Force Graphics Quality Level</h3>
+<p>added by @pixelyloaf</p>
+<pre><code class="language-json">{
+    &quot;FIntRomarkStartWithGraphicsQualityLevel&quot;: &quot;1&quot;
+}
+</code></pre>
+<h3 id="disable-player-shadows">Disable Player Shadows</h3>
+<p>added by @pixelyloaf</p>
+<pre><code class="language-json">{
+    &quot;FIntRenderShadowIntensity&quot;: &quot;0&quot;
+}
+</code></pre>
+<h3 id="preserve-rendering-quality-with-display-setting">Preserve rendering quality with display setting</h3>
+<p>added by @pixelyloaf</p>
+<pre><code class="language-json">{
+    &quot;DFFlagDisableDPIScale&quot;: &quot;True&quot;
+}
+</code></pre>
+<h3 id="low-graphics-quality-w-max-render-distancefrm-quality-levels">Low Graphics Quality w/ Max Render Distance/FRM Quality Levels</h3>
+<p>added by @pixelyloaf</p>
+<blockquote>
+<p>[!TIP]
+<strong>1-6 Are low graphics, Above 6 are high graphics. Like the 1-21 graphics slider</strong></p>
+</blockquote>
+<pre><code class="language-json">{
+    &quot;DFIntDebugFRMQualityLevelOverride&quot;: &quot;1&quot;
+}
+</code></pre>
+<h3 id="frm-21-graphics-quality-slider">FRM 21 Graphics Quality Slider</h3>
+<p>added by @pixelyloaf</p>
+<pre><code class="language-json">{
+    &quot;FFlagCommitToGraphicsQualityFix&quot;: &quot;True&quot;,
+    &quot;FFlagFixGraphicsQuality&quot;: &quot;True&quot;
+}
+</code></pre>
+<h3 id="low-render-distance">Low render distance</h3>
+<p>added by @pixelyloaf</p>
+<pre><code class="language-json">{
+    &quot;DFIntDebugRestrictGCDistance&quot;: &quot;1&quot;
+}
+</code></pre>
+<h3 id="limit-light-updates">Limit light updates</h3>
+<p>added by @pixelyloaf</p>
+<pre><code class="language-json">{
+    &quot;FIntRenderLocalLightUpdateMax&quot;: &quot;8&quot;,
+    &quot;FIntRenderLocalLightUpdatesMin&quot;: &quot;6&quot;
+}
+</code></pre>
+<h3 id="disables-fade-in-and-out-animation-every-light-update">Disables fade in and out animation every light update</h3>
+<p>added by @pixelyloaf</p>
+<pre><code class="language-json">{
+    &quot;FIntRenderLocalLightFadeInMs&quot;: &quot;0&quot;
+}
+</code></pre>
+<h3 id="make-avatars-shiny">Make avatars shiny</h3>
+<p>added by @pixelyloaf
+==- :icon-question: View Documentation</p>
+<blockquote>
+<p>[!TIP]
+<strong>Everything goes black on below &lt;3</strong></p>
+<p>[!NOTE]
+<strong>DFIntDebugFRMQualityLevelOverride os tjere to set your graphics to 3 bars</strong></p>
+<p>[!TIP]
+<strong>You can change it to anything above 3</strong>
+===</p>
+</blockquote>
+<pre><code class="language-json">{
+    &quot;DFIntRenderClampRoughnessMax&quot;: &quot;-640000000&quot;,
+    &quot;DFIntDebugFRMQualityLevelOverridge&quot;: &quot;6&quot;
+}
+</code></pre>
+<h3 id="disable-postfx">Disable PostFX</h3>
+<p>added by @pixelyloaf</p>
+<pre><code class="language-json">{
+    &quot;FFlagDisablePostFx&quot;: &quot;True&quot;
+}
+</code></pre>
+<h3 id="pause-voxelizerdisable-baked-shadows">Pause Voxelizer/Disable Baked Shadows</h3>
+<p>added by @pixelyloaf</p>
+<pre><code class="language-json">{
+    &quot;DFFlagDebugPauseVoxelizer&quot;: &quot;True&quot;
+}
+</code></pre>
+<h3 id="grey-sky">Grey sky</h3>
+<p>added by @pixelyloaf</p>
+<blockquote>
+<p>[!IMPORTANT]
+<strong>Only applies to games with the default skybox</strong></p>
+</blockquote>
+<pre><code class="language-json">{
+    &quot;FFlagDebugSkyGray&quot;: &quot;True&quot;
+}
+</code></pre>
+<h3 id="force-lod-on-meshes">Force LOD on Meshes</h3>
+<p>added by @pixelyloaf</p>
+<pre><code class="language-json">{
+    &quot;DFIntCSGLevelOfDetailSwitchingDistance&quot;: &quot;0&quot;,
+    &quot;DFIntCSGLevelOfDetailSwitchingDistanceL12&quot;: &quot;0&quot;,
+    &quot;DFIntCSGLevelOfDetailSwitchingDistanceL23&quot;: &quot;0&quot;,
+    &quot;DFIntCSGLevelOfDetailSwitchingDistanceL34&quot;: &quot;0&quot;
+}
+</code></pre>
+<h3 id="lighting-attenuation">Lighting Attenuation</h3>
+<p>added by @pixelyloaf</p>
+<pre><code class="language-json">{
+    &quot;FFlagNewLightAttenuation&quot;: &quot;True&quot;
+}
+</code></pre>
+<h3 id="enable-gpulightculling">Enable GPULightCulling</h3>
+<p>added by @pixelyloaf</p>
+<blockquote>
+<p>[!TIP]
+<strong>Combine with LightingAttenuation for better vision</strong></p>
+</blockquote>
+<pre><code class="language-json">{
+    &quot;FFlagFastGPULightCulling3&quot;: &quot;True&quot;
+}
+</code></pre>
+<h3 id="enable-cpulightculling">Enable CPULightCulling</h3>
+<p>added by @pixelyloaf</p>
+<pre><code class="language-json">{
+    &quot;FFlagDebugForceFSMCPULightCulling&quot;: &quot;True&quot;
+}
+</code></pre>
+<h3 id="frame-buffer">Frame buffer</h3>
+<p>added by @pixelyloaf</p>
+<blockquote>
+<p>[!TIP]
+<strong>0 makes white screen 1-3 makes other players have laggy movement, 4 is stable has better performance than 10 and less input lag</strong></p>
+</blockquote>
+<pre><code class="language-json">{
+    &quot;FIntTerrainArraySliceSize&quot;: &quot;4&quot;
+}
+</code></pre>
+<h3 id="low-quality-terrain-textures">Low Quality Terrain Textures</h3>
+<p>added by @pixelyloaf</p>
+<blockquote>
+<p>[!TIP]
+<strong>4 for less quality 16, 32, 64 for higher quality</strong></p>
+</blockquote>
+<pre><code class="language-json">{
+    &quot;FIntTerrainArraySliceSize&quot;: &quot;4&quot;
+}
+</code></pre>
+<h3 id="force-texture-quality">Force Texture Quality</h3>
+<p>added by @pixelyloaf</p>
+<blockquote>
+<p>[!TIP]
+<strong>Set any value from 0-3</strong></p>
+</blockquote>
+<pre><code class="language-json">{
+    &quot;DFFlagTextureQualityOverrideEnabled&quot;: &quot;True&quot;,
+    &quot;DFIntTextureQualityOverride&quot;: &quot;3&quot;
+}
+</code></pre>
+<h3 id="lower-quality-textures">Lower Quality Textures</h3>
+<p>added by @pixelyloaf</p>
+<pre><code class="language-json">{
+    &quot;DFIntPerformanceControlTextureQualityBestUtility&quot;: &quot;-1&quot;
+}
+</code></pre>
+<h3 id="no-avatar-textures">No avatar textures</h3>
+<p>added by @pixelyloaf</p>
+<pre><code class="language-json">{
+    &quot;DFIntTextureCompositorActiveJobs&quot;: &quot;0&quot;
+}
+</code></pre>
+<h3 id="texture-manager">Texture Manager</h3>
+<p>added by @pixelyloaf</p>
+<blockquote>
+<p>[!TIP]
+1-4 Blurry, 5-7 low quality also removes studs, 8 Removes almost everything</p>
+</blockquote>
+<pre><code class="language-json">{
+    &quot;FIntDebugTextureManagerSkipMips&quot;: &quot;8&quot;
+}
+</code></pre>
+<h3 id="remove-grass">Remove Grass</h3>
+<p>added by @pixelyloaf</p>
+<pre><code class="language-json">{
+    &quot;FIntFRMMinGrassDistance&quot;: &quot;0&quot;,
+    &quot;FIntFRMMaxGrassDistance&quot;: &quot;0&quot;,
+    &quot;FIntRenderGrassDetailStrands&quot;: &quot;0&quot;,
+}
+</code></pre>
+<h3 id="force-msaa">Force MSAA</h3>
+<p>added by @pixelyloaf</p>
+<blockquote>
+<p>[!IMPORTANT]
+<strong>Values: 0, 1, 2, 4, 8</strong></p>
+<p>[!CAUTION]
+<strong>Values over 4&gt; will cause viewport bugs</strong></p>
+</blockquote>
+<pre><code class="language-json">{
+    &quot;FIntDebugForcMSAASamples&quot;: &quot;4&quot;
+}
+</code></pre>
+<h3 id="shadowmap-bias">ShadowMap Bias</h3>
+<p>added by @pixelyloaf</p>
+<blockquote>
+<p>[!IMPORTANT]
+<strong>Future &amp; ShadowMap only</strong></p>
+</blockquote>
+<pre><code class="language-json">{
+    &quot;FIntRenderShadowmapBias&quot;: &quot;75&quot;
+}
+</code></pre>
+<h3 id="limits-number-of-animations-being-played">Limits number of animations being played</h3>
+<p>added by @pixelyloaf</p>
+<blockquote>
+<p>[!TIP]
+<strong>0 removes most player animations, 1-5 removes the walk animation after jumping</strong></p>
+</blockquote>
+<pre><code class="language-json">{
+    &quot;DFIntMaxActiveAnimationTracks&quot;: &quot;0&quot;
+}
+</code></pre>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": [{"navigation.tabs": false}, "navigation.sections"], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      
+    
+  </body>
+</html>

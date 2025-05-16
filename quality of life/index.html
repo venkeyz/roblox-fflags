@@ -1,0 +1,1575 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../misc/">
+      
+      
+        <link rel="next" href="../rendering/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+    
+    
+      
+        <title>Quality Of Life - roblox-fflags</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.342714a4.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#do-not-disturbdisable-notifications" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="roblox-fflags" class="md-header__button md-logo" aria-label="roblox-fflags" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            roblox-fflags
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Quality Of Life
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="roblox-fflags" class="md-nav__button md-logo" aria-label="roblox-fflags" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    roblox-fflags
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../abusive/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Abusive
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../audio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Audio
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../experiment/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Experiment
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../graphics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Graphics
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lighting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Lighting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../misc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Miscellaneous
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Quality of Life
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Quality of Life
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#do-not-disturbdisable-notifications" class="md-nav__link">
+    <span class="md-ellipsis">
+      DO NOT DISTURB/Disable Notifications
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#disable-vc" class="md-nav__link">
+    <span class="md-ellipsis">
+      Disable VC
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#remove-translated-supported-message-on-join" class="md-nav__link">
+    <span class="md-ellipsis">
+      Remove translated supported message on join
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#allows-you-to-customize-which-languages-are-available-for-the-chat-translation-feature" class="md-nav__link">
+    <span class="md-ellipsis">
+      Allows you to customize which languages are available for the chat translation feature
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#remove-long-recommended-section-in-homepage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Remove long recommended section in homepage
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#disable-captures-keybind" class="md-nav__link">
+    <span class="md-ellipsis">
+      Disable Captures Keybind
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reduced-avatar-item-particle-in-fp" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reduced Avatar Item Particle in FP
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fps-unlocker-in-roblox-menu-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      FPS Unlocker in Roblox Menu Settings
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#disable-240-fps-cap" class="md-nav__link">
+    <span class="md-ellipsis">
+      Disable 240 FPS cap
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#unlimited-fps-unlocker" class="md-nav__link">
+    <span class="md-ellipsis">
+      Unlimited FPS Unlocker
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gui-hiding-toggles" class="md-nav__link">
+    <span class="md-ellipsis">
+      GUI Hiding Toggles
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hide-guis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hide GUIs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#remove-layered-clothing-related-for-searching-in-lua-app-catalog" class="md-nav__link">
+    <span class="md-ellipsis">
+      Remove layered clothing related for searching in lua app catalog
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#disable-fullscreen-title-bar" class="md-nav__link">
+    <span class="md-ellipsis">
+      Disable Fullscreen Title Bar
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stuttery-animation-fix" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stuttery Animation Fix
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#disable-in-game-advertisements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Disable In-game Advertisements
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#disable-telemetry" class="md-nav__link">
+    <span class="md-ellipsis">
+      Disable Telemetry
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#surf-the-web-inside-of-roblox" class="md-nav__link">
+    <span class="md-ellipsis">
+      Surf the web inside of Roblox
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mtu" class="md-nav__link">
+    <span class="md-ellipsis">
+      MTU
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#no-internet-disconnect" class="md-nav__link">
+    <span class="md-ellipsis">
+      No Internet Disconnect
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adjust-default-timeout-time" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adjust Default Timeout Time
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quick-game-launch" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quick Game Launch
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#increased-asset-preloading-count" class="md-nav__link">
+    <span class="md-ellipsis">
+      Increased Asset Preloading Count
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#disable-in-gmae-purchases" class="md-nav__link">
+    <span class="md-ellipsis">
+      Disable In-Gmae Purchases
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#disable-chat" class="md-nav__link">
+    <span class="md-ellipsis">
+      Disable Chat
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#disable-dynamic-heads-animations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Disable Dynamic Heads Animations
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#automatically-unmuts-your-mic-on-join-vc" class="md-nav__link">
+    <span class="md-ellipsis">
+      Automatically unmuts your mic on join (VC)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#opt-out-experience-language" class="md-nav__link">
+    <span class="md-ellipsis">
+      opt-out Experience Language
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lets-you-change-the-zoom-out-limit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lets you change the zoom out limit
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exclusive-fullscreen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exclusive Fullscreen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#change-age-rating-learn-more-link" class="md-nav__link">
+    <span class="md-ellipsis">
+      Change Age Rating Learn More Link
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rename-party-2-roblox-chat" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rename Party 2 Roblox Chat
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-decimal-digits-limit-for-camera-sensitivity" class="md-nav__link">
+    <span class="md-ellipsis">
+      5 decimal digits limit for camera sensitivity
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rendering/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Rendering
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ui%2Bvisuals/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    UI + Visuals
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../unorganized/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Unorganized
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" >
+        
+          
+          <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Presets
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_12">
+            <span class="md-nav__icon md-icon"></span>
+            Presets
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../presets/community/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Community
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../presets/official/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Official
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#do-not-disturbdisable-notifications" class="md-nav__link">
+    <span class="md-ellipsis">
+      DO NOT DISTURB/Disable Notifications
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#disable-vc" class="md-nav__link">
+    <span class="md-ellipsis">
+      Disable VC
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#remove-translated-supported-message-on-join" class="md-nav__link">
+    <span class="md-ellipsis">
+      Remove translated supported message on join
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#allows-you-to-customize-which-languages-are-available-for-the-chat-translation-feature" class="md-nav__link">
+    <span class="md-ellipsis">
+      Allows you to customize which languages are available for the chat translation feature
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#remove-long-recommended-section-in-homepage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Remove long recommended section in homepage
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#disable-captures-keybind" class="md-nav__link">
+    <span class="md-ellipsis">
+      Disable Captures Keybind
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reduced-avatar-item-particle-in-fp" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reduced Avatar Item Particle in FP
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fps-unlocker-in-roblox-menu-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      FPS Unlocker in Roblox Menu Settings
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#disable-240-fps-cap" class="md-nav__link">
+    <span class="md-ellipsis">
+      Disable 240 FPS cap
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#unlimited-fps-unlocker" class="md-nav__link">
+    <span class="md-ellipsis">
+      Unlimited FPS Unlocker
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gui-hiding-toggles" class="md-nav__link">
+    <span class="md-ellipsis">
+      GUI Hiding Toggles
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hide-guis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hide GUIs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#remove-layered-clothing-related-for-searching-in-lua-app-catalog" class="md-nav__link">
+    <span class="md-ellipsis">
+      Remove layered clothing related for searching in lua app catalog
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#disable-fullscreen-title-bar" class="md-nav__link">
+    <span class="md-ellipsis">
+      Disable Fullscreen Title Bar
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stuttery-animation-fix" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stuttery Animation Fix
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#disable-in-game-advertisements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Disable In-game Advertisements
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#disable-telemetry" class="md-nav__link">
+    <span class="md-ellipsis">
+      Disable Telemetry
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#surf-the-web-inside-of-roblox" class="md-nav__link">
+    <span class="md-ellipsis">
+      Surf the web inside of Roblox
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mtu" class="md-nav__link">
+    <span class="md-ellipsis">
+      MTU
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#no-internet-disconnect" class="md-nav__link">
+    <span class="md-ellipsis">
+      No Internet Disconnect
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adjust-default-timeout-time" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adjust Default Timeout Time
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quick-game-launch" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quick Game Launch
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#increased-asset-preloading-count" class="md-nav__link">
+    <span class="md-ellipsis">
+      Increased Asset Preloading Count
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#disable-in-gmae-purchases" class="md-nav__link">
+    <span class="md-ellipsis">
+      Disable In-Gmae Purchases
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#disable-chat" class="md-nav__link">
+    <span class="md-ellipsis">
+      Disable Chat
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#disable-dynamic-heads-animations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Disable Dynamic Heads Animations
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#automatically-unmuts-your-mic-on-join-vc" class="md-nav__link">
+    <span class="md-ellipsis">
+      Automatically unmuts your mic on join (VC)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#opt-out-experience-language" class="md-nav__link">
+    <span class="md-ellipsis">
+      opt-out Experience Language
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lets-you-change-the-zoom-out-limit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lets you change the zoom out limit
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exclusive-fullscreen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exclusive Fullscreen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#change-age-rating-learn-more-link" class="md-nav__link">
+    <span class="md-ellipsis">
+      Change Age Rating Learn More Link
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rename-party-2-roblox-chat" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rename Party 2 Roblox Chat
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-decimal-digits-limit-for-camera-sensitivity" class="md-nav__link">
+    <span class="md-ellipsis">
+      5 decimal digits limit for camera sensitivity
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>Quality of Life</h1>
+
+<h3 id="do-not-disturbdisable-notifications">DO NOT DISTURB/Disable Notifications</h3>
+<p>added by @pixelyloaf</p>
+<pre><code class="language-json">{
+    &quot;FFlagToastNotificationsProtocolEnabled2&quot;: &quot;False&quot;
+}
+</code></pre>
+<h3 id="disable-vc">Disable VC</h3>
+<p>added by @pixelyloaf</p>
+<blockquote>
+<p>[!NOTE]
+Setting this to <code>True</code> will not do anything</p>
+</blockquote>
+<pre><code class="language-json">{
+    &quot;DFFlagVoiceChat4&quot;: &quot;False&quot;
+}
+</code></pre>
+<h3 id="remove-translated-supported-message-on-join">Remove translated supported message on join</h3>
+<p>added by @pixelyloaf</p>
+<blockquote>
+<p>[!NOTE]
+<code>"Roblox automatically translates supported languages in chat."</code></p>
+</blockquote>
+<pre><code class="language-json">{
+    &quot;FFlagChatTranslationEnableSystemMessage&quot;: &quot;False&quot;
+}
+</code></pre>
+<h3 id="allows-you-to-customize-which-languages-are-available-for-the-chat-translation-feature">Allows you to customize which languages are available for the chat translation feature</h3>
+<p>added by @pixelyloaf</p>
+<blockquote>
+<p>[!IMPORTANT]
+English cannot be removed.</p>
+</blockquote>
+<pre><code class="language-json">{
+    &quot;FStringChatTranslationEnabledLocales&quot;: &quot;es_es,fr_fr,pt_br,de_de,it_it,ja_jp,ko_kr,id_id,tr_tr,zh_cn,zh_tw,th_th,pl_pl,vi_vn,ru_ru,&quot;
+}
+</code></pre>
+<h3 id="remove-long-recommended-section-in-homepage">Remove long recommended section in homepage</h3>
+<p>added by @pixelyloaf</p>
+<pre><code class="language-json">{
+    &quot;FIntGameGridFlexFeedItemTileNumPerFeed&quot;: &quot;0&quot;
+}
+</code></pre>
+<h3 id="disable-captures-keybind">Disable Captures Keybind</h3>
+<p>added by @pixelyloaf</p>
+<pre><code class="language-json">{
+    &quot;FFlagEnableCapturesHotkeyExperiment_v4&quot;: &quot;False&quot;
+}
+</code></pre>
+<h3 id="reduced-avatar-item-particle-in-fp">Reduced Avatar Item Particle in FP</h3>
+<p>added by @pixelyloaf</p>
+<pre><code class="language-json">{
+    &quot;FFlagUserHideCharacterParticlesInFirstPerson&quot;: &quot;True&quot;
+}
+</code></pre>
+<h3 id="fps-unlocker-in-roblox-menu-settings">FPS Unlocker in Roblox Menu Settings</h3>
+<p>added by @pixelyloaf</p>
+<pre><code class="language-json">{
+    &quot;FFlagTaskSchedulerLimitTargetFpsTo2402&quot;: &quot;False&quot;,
+    &quot;DFIntTaskSchedulerTargetFps&quot;: &quot;9999&quot;
+}
+</code></pre>
+<h3 id="disable-240-fps-cap">Disable 240 FPS cap</h3>
+<p>added by @pixelyloaf</p>
+<pre><code class="language-json">{
+    &quot;FFlagTaskSchedulerLimitTargetFpsTo2402&quot;: &quot;False&quot;
+}
+</code></pre>
+<h3 id="unlimited-fps-unlocker">Unlimited FPS Unlocker</h3>
+<p>added by @pixelyloaf</p>
+<pre><code class="language-json">{
+    &quot;FFlagTaskSchedulerLimitTargetFpsTo2402&quot;: &quot;False&quot;,
+    &quot;DFIntTaskSchedulerTargetFps&quot;: &quot;9999&quot;
+}
+</code></pre>
+<h3 id="gui-hiding-toggles">GUI Hiding Toggles</h3>
+<p>added by @pixelyloaf</p>
+<pre><code class="language-json">{
+    &quot;FFlagUserShowGuiHideToggles&quot;: &quot;True&quot;,
+    &quot;GuiHidingApiSupport2&quot;: &quot;True&quot;
+}
+</code></pre>
+<h3 id="hide-guis">Hide GUIs</h3>
+<p>added by @pixelyloaf</p>
+<blockquote>
+<p>[!IMPORTANT]
+Replace "ID" with any group ID that you are in.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Key combination</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ctrl + Shift + B</td>
+<td>Toggles GUIs in 3D space (BillboardGuis, SurfaceGuis, etc)</td>
+</tr>
+<tr>
+<td>Ctrl + Shift + C</td>
+<td>Toggles game-defined ScreenGuis</td>
+</tr>
+<tr>
+<td>Ctrl + Shift + G</td>
+<td>Toggles Roblox CoreGuis</td>
+</tr>
+<tr>
+<td>Ctrl + Shift + N</td>
+<td>Toggles player names, and other BillboardGuis that show up above a player</td>
+</tr>
+</tbody>
+</table>
+<pre><code class="language-json">{
+    &quot;DFIntCanHideGuiGroupId&quot;: &quot;ID&quot;
+}
+</code></pre>
+<h3 id="remove-layered-clothing-related-for-searching-in-lua-app-catalog">Remove layered clothing related for searching in lua app catalog</h3>
+<p>added by @pixelyloaf</p>
+<pre><code class="language-json">{
+    &quot;FStringAXCategories&quot;: &quot;ClassicShirts.ClassicTShirts.ClassicPants&quot;
+}
+</code></pre>
+<h3 id="disable-fullscreen-title-bar">Disable Fullscreen Title Bar</h3>
+<p>added by @pixelyloaf</p>
+<pre><code class="language-json">{
+    &quot;FIntFullscreenTitleBarTriggerDelayMillis&quot;: &quot;3600000&quot;
+}
+</code></pre>
+<h3 id="stuttery-animation-fix">Stuttery Animation Fix</h3>
+<p>added by @pixelyloaf</p>
+<p>might of messed up the spelling mb</p>
+<pre><code class="language-json">{
+    &quot;DFIntTimestepArbiterThresholdCFLThou&quot;: &quot;300&quot;
+}
+</code></pre>
+<h3 id="disable-in-game-advertisements">Disable In-game Advertisements</h3>
+<p>added by @pixelyloaf</p>
+<pre><code class="language-json">{
+    &quot;FFlagAdServiceEnabled&quot;: &quot;False&quot;
+}
+</code></pre>
+<h3 id="disable-telemetry">Disable Telemetry</h3>
+<p>added by @pixelyloaf</p>
+<pre><code class="language-json">{
+    &quot;FFlagDebugDisableTelemetryEphemeralCounter&quot;: &quot;True&quot;,
+    &quot;FFlagDebugDisableTelemetryEphemeralStat&quot;: &quot;True&quot;,
+    &quot;FFlagDebugDisableTelemetryEventIngest&quot;: &quot;True&quot;,
+    &quot;FFlagDebugDisableTelemetryPoint&quot;: &quot;True&quot;,
+    &quot;FFlagDebugDisableTelemetryV2Counter&quot;: &quot;True&quot;,
+    &quot;FFlagDebugDisableTelemetryV2Event&quot;: &quot;True&quot;,
+    &quot;FFlagDebugDisableTelemetryV2Stat&quot;: &quot;True&quot;
+}
+</code></pre>
+<h3 id="surf-the-web-inside-of-roblox">Surf the web inside of Roblox</h3>
+<p>added by @pixelyloaf</p>
+<blockquote>
+<p>[!IMPORTANT]
+<strong>Click the Beta Badge of the 13+ badge to open the webview browser.</strong></p>
+</blockquote>
+<pre><code class="language-json">{
+    &quot;FFlagTopBarUseNewBadge&quot;: &quot;True&quot;,
+    &quot;FStringTopBarBadgeLearnMoreLink&quot;: &quot;https://udm14.com/&quot;,
+    &quot;FStringVoiceBetaBadgeLearnMoreLink&quot;: &quot;https://udm14.com/&quot;
+}
+</code></pre>
+<h3 id="mtu">MTU</h3>
+<p>added by @pixelyloaf
+==- :icon-question: View Full Documentation</p>
+<blockquote>
+<p>[!TIP]
+<strong>Identify the Current MTU</strong>
+- <strong>Windows</strong>: Open Command Prompt and type 'netsh interface ipv4 show subinterfaces`.
+- <strong>Linux</strong>: Use 'ifconfig' or 'ip link show' to find the current MTU of your network interface.</p>
+<p>[!TIP]
+<strong>Determine the Optimal MTU</strong>
+- <strong>Ping Test</strong>: Use the <code>ping</code> command with the <code>-f</code> flaf (to avoid fragmentation) and the <code>l</code> (or <code>s</code> on Linux) flag to set the global packet size.
+- <strong>Example for Windows</strong>:
+<code>bash
+ping roblox.com -f -l 1472</code>
+- <strong>Example for Linux</strong>:
+<code>bash
+ping -s 1472 -M do roblox.com</code>
+- Start with a packet size of 1472 bytes, then reduce by 10-12 bytes if needed until you find the largest size that doesn't fragment. Add 28 bytes to this number to get the optimal MTU.
+===</p>
+</blockquote>
+<pre><code class="language-json">{
+    &quot;DFIntConnectionMTUSize&quot;: &quot;MTU_HERE&quot;
+}
+</code></pre>
+<h3 id="no-internet-disconnect">No Internet Disconnect</h3>
+<p>added by @pixelyloaf</p>
+<blockquote>
+<p>[!NOTE]
+<strong>You will still be kicked but the message will not show.</strong></p>
+</blockquote>
+<pre><code class="language-json">{
+    &quot;DFFlagDebugDisableTimeoutDisconnect&quot;: &quot;True&quot;
+}
+</code></pre>
+<h3 id="adjust-default-timeout-time">Adjust Default Timeout Time</h3>
+<p>added by @pixelyloaf</p>
+<blockquote>
+<p>[!TIP]
+<strong>1 second = 1000</strong></p>
+</blockquote>
+<pre><code class="language-json">{
+    &quot;DFIntDefaultTimeoutTimeMs&quot;: &quot;10000&quot;
+}
+</code></pre>
+<h3 id="quick-game-launch">Quick Game Launch</h3>
+<p>added by @pixelyloaf</p>
+<blockquote>
+<p>[!CAUTION]
+<strong>This can cause some bugs</strong></p>
+</blockquote>
+<pre><code class="language-json">{
+    &quot;FFlagEnableQuickGameLaunch&quot;: &quot;True&quot;
+}
+</code></pre>
+<h3 id="increased-asset-preloading-count">Increased Asset Preloading Count</h3>
+<p>added by @pixelyloaf
+==- :icon-question: View Full Documentation</p>
+<blockquote>
+<p>[!NOTE]
+<strong>Increasing the maximum limit of preloaded assets from 100 to infinite allows games you've already played to load much faster by instantly accessing previously loaded assets.</strong></p>
+<p>[!IMPORTANT]
+<strong>For this to be effective, the game must have been fully loaded at least once, preferably with the entire map cached.</strong></p>
+<p>[!TIP]
+<strong>If a game has a "Skip Loading" button, it's recommended to use it. These games typically include a countdown timer that, after reaching zero, merely confirms that all assets are loaded.</strong>
+===</p>
+</blockquote>
+<pre><code class="language-json">{
+    &quot;DFIntNumAssestsMaxToPreload&quot;: &quot;9999999&quot;,
+    &quot;DFIntAssetPreloading&quot;: &quot;9999999&quot;
+}
+</code></pre>
+<h3 id="disable-in-gmae-purchases">Disable In-Gmae Purchases</h3>
+<p>added by @pixelyloaf</p>
+<pre><code class="language-json">{
+    &quot;DFlagOrder66&quot;: &quot;True&quot;
+}
+</code></pre>
+<h3 id="disable-chat">Disable Chat</h3>
+<p>added by @pixelyloaf</p>
+<pre><code class="language-json">{
+    &quot;FFlagDebugForceChatDisabled&quot;: &quot;True&quot;
+}
+</code></pre>
+<h3 id="disable-dynamic-heads-animations">Disable Dynamic Heads Animations</h3>
+<p>added by @pixelyloaf</p>
+<pre><code class="language-json">{
+    &quot;DFIntAnimationLodFacsDistanceMin&quot;: &quot;0&quot;,
+    &quot;DFIntAnimationLodFacsDistanceMax&quot;: &quot;0&quot;,
+    &quot;DFIntAnimationLodFacsVisibilityDenominator&quot;: &quot;0&quot;
+}
+</code></pre>
+<h3 id="automatically-unmuts-your-mic-on-join-vc">Automatically unmuts your mic on join (VC)</h3>
+<p>added by @pixelyloaf</p>
+<pre><code class="language-json">{
+    &quot;FFlagDebugDefaultChannelStartMuted&quot;: &quot;False&quot;
+}
+</code></pre>
+<h3 id="opt-out-experience-language">opt-out Experience Language</h3>
+<p>added by @pixelyloaf</p>
+<blockquote>
+<p>[!NOTE]
+<strong>Removes the Experience Language option in settings</strong></p>
+</blockquote>
+<pre><code class="language-json">{
+    &quot;FIntV1MenuLanguageSelectionFeaturePerMillageRollout&quot;: &quot;0&quot;
+}
+</code></pre>
+<h3 id="lets-you-change-the-zoom-out-limit">Lets you change the zoom out limit</h3>
+<p>added by @pixelyloaf</p>
+<blockquote>
+<p>[!IMPORTANT]
+<strong>Only applies to games that has not changed the default zoom limit</strong></p>
+</blockquote>
+<pre><code class="language-json">{
+    &quot;FIntCameraMaxZoomDistance&quot;: &quot;9999&quot;
+}
+</code></pre>
+<h3 id="exclusive-fullscreen">Exclusive Fullscreen</h3>
+<p>added by @pixelyloaf</p>
+<blockquote>
+<p>[!TIP]
+Alt + Delete</p>
+</blockquote>
+<pre><code class="language-json">{
+    &quot;FFlagHandleAltEnterFullscreenManually&quot;: &quot;False&quot;
+}
+</code></pre>
+<h3 id="change-age-rating-learn-more-link">Change Age Rating Learn More Link</h3>
+<p>added by @pixelyloaf</p>
+<pre><code class="language-json">{
+    &quot;FStringExperienceGuidelinesExplainedPageUrl&quot;: &quot;https://udm14.com/&quot;
+}
+</code></pre>
+<h3 id="rename-party-2-roblox-chat">Rename Party 2 Roblox Chat</h3>
+<p>added by @pixelyloaf</p>
+<pre><code class="language-json">{
+    &quot;FFlagAppChatRebrandStringUpdates&quot;: &quot;False&quot;
+}
+</code></pre>
+<h3 id="5-decimal-digits-limit-for-camera-sensitivity">5 decimal digits limit for camera sensitivity</h3>
+<p>added by @pixelyloaf</p>
+<blockquote>
+<p>[!NOTE]
+only added because people i know use them</p>
+</blockquote>
+<pre><code class="language-json">{
+    &quot;FFlagFixSensitivityTextPrecision&quot;: &quot;False&quot;
+}
+</code></pre>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": [{"navigation.tabs": false}, "navigation.sections"], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      
+    
+  </body>
+</html>
