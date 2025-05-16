@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://pixelyloaf.github.io/roblox-fflags/sitemap.xml.gz
