@@ -1,3 +1,15 @@
 site_name: roblox-fflags
 nav:
   - Home: index.md
+  - Abusive: abusive.md
+  - Audio: audio.md
+  - Experiment: experiment.md
+  - Graphics: graphics.md
+  - Lighting: lighting.md
+  - Miscellaneous: misc.md
+  - Quality of Life: quality of life.md
+  - Rendering: rendering.md
+  - UI + Visuals: ui+visuals.md
+  - Unorganized: unorganized.md
+  - Presets:
+      - presets/index.md
