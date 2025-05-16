@@ -1,6 +1,18 @@
 # roblox-fflags
 
-![GitHub commit activity](https://img.shields.io/github/commit-activity/t/pixelyloaf/roblox-fflags?authorFilter=venkeyz&style=plastic)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/t/venkeyz/roblox-fflags?authorFilter=venkeyz&style=plastic&label=venkeyz)
+
+## Star History
+
+<a href="https://www.star-history.com/#pixelyloaf/roblox-fflags&venkeyz/roblox-fflags&Timeline">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=pixelyloaf/roblox-fflags,venkeyz/roblox-fflags&type=Timeline&theme=dark" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=pixelyloaf/roblox-fflags,venkeyz/roblox-fflags&type=Timeline" />
+   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=pixelyloaf/roblox-fflags,venkeyz/roblox-fflags&type=Timeline" />
+ </picture>
+</a>
+
+# nothing below is updated yet
 
 list of fflags on roblox i've seen sorted into folders
 
@@ -12,15 +24,7 @@ will accept pull requests for it though aslong it's under the fflags section and
 
 ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/pixelyloaf/roblox-fflags/retype-action.yml?style=for-the-badge)
 
-## Star History
 
-<a href="https://www.star-history.com/#pixelyloaf/roblox-fflags&venkeyz/roblox-fflags&Timeline">
- <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=pixelyloaf/roblox-fflags,venkeyz/roblox-fflags&type=Timeline&theme=dark" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=pixelyloaf/roblox-fflags,venkeyz/roblox-fflags&type=Timeline" />
-   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=pixelyloaf/roblox-fflags,venkeyz/roblox-fflags&type=Timeline" />
- </picture>
-</a>
 
 # no longer interested in this
 
