@@ -1,1 +1,3 @@
 site_name: roblox-fflags
+nav:
+  - Home: index.md
