@@ -1,5 +1,6 @@
 ---
 title: Quality Of Life
+icon: sparkle-fill
 order: -4
 ---
 

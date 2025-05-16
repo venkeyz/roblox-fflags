@@ -1,5 +1,6 @@
 ---
 title: Lighting
+icon: light-bulb
 order: -1
 ---
 ### Voxel Lighting (Phase 1)

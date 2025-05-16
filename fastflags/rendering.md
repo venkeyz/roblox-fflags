@@ -1,5 +1,6 @@
 ---
 title: Rendering
+icon: cpu
 order: 0
 ---
 

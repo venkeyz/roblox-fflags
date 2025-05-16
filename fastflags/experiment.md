@@ -1,5 +1,6 @@
 ---
 title: Experimental
+icon: north-star
 order: -9
 ---
 ### Voicechat in Party

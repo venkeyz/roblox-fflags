@@ -1,5 +1,6 @@
 ---
 title: Graphics
+icon: device-desktop
 order: -3
 ---
 
