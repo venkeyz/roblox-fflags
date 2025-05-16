@@ -1,6 +1,5 @@
 ---
 title: UI+Visuals
-icon: versions
 order: -5
 ---
 ### Revert Debug Menu UI Change

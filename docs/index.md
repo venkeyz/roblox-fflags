@@ -1,6 +1,5 @@
 ---
 title: -Index-
-icon: rel-file-path
 authors:
     - name: loaf0002
       link: https://bsky.app/profile/loaf0002.bsky.social

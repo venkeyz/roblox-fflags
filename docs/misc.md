@@ -1,6 +1,5 @@
 ---
 title: Misc
-icon: ellipsis
 order: -8
 ---
 # :icon-trash:
