@@ -1,6 +1,5 @@
 ---
 title: Variables & Prefix
-icon: terminal
 ---
 {.compact}
 Label   | Type  | Description

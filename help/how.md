@@ -1,6 +1,5 @@
 ---
 title: How To Use
-icon: devices
 ---
 
 ## :icon-question: Bloxstrap/Fishstrap How to Use:
