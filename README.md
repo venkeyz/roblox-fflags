@@ -1,3 +1,7 @@
+# new repo
+
+click [here](https://github.com/venkeyz/roblox-fflags)
+
 # roblox-fflags
 
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/t/pixelyloaf/roblox-fflags?authorFilter=pixelyloaf&style=for-the-badge&logo=github) 
@@ -18,7 +22,13 @@ will accept pull requests for it though aslong it's under the fflags section and
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=pixelyloaf/roblox-fflags&type=Date)](https://www.star-history.com/#pixelyloaf/roblox-fflags&Date)
+<a href="https://www.star-history.com/#pixelyloaf/roblox-fflags&venkeyz/roblox-fflags&Timeline">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=pixelyloaf/roblox-fflags,venkeyz/roblox-fflags&type=Timeline&theme=dark" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=pixelyloaf/roblox-fflags,venkeyz/roblox-fflags&type=Timeline" />
+   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=pixelyloaf/roblox-fflags,venkeyz/roblox-fflags&type=Timeline" />
+ </picture>
+</a>
 
 # no longer interested in this
 
