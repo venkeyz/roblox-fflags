@@ -1,4 +1,9 @@
 site_name: roblox-fflags
+theme:
+  name: material
+  features:
+    - navigation.tabs: false
+    - navigation.sections
 nav:
   - Home: index.md
   - Abusive: abusive.md
