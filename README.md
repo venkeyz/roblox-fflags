@@ -27,6 +27,6 @@ only unarchived for requests
 
 ~~the other person that works on this will probably continue but they usually follow suit on projects i make locally~~
 
-man you alr know my answer
+~~man you alr know my answer~~
 
 # fflags
